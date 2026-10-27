@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About — WILLNET | Women in Learning & Leadership Network</title>
+<meta name="description" content="Learn about WILLNET, the Women in Learning &amp; Leadership Network: our mission, our story, and how we give women practical opportunities to build leadership skills in a supportive community."/>
+<link rel="canonical" href="https://www.willnet.ca/about.html"/>
+<meta name="theme-color" content="#2B2B2B"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="WILLNET"/>
+<meta property="og:title" content="About — WILLNET | Women in Learning & Leadership Network"/>
+<meta property="og:description" content="Learn about WILLNET, the Women in Learning &amp; Leadership Network: our mission, our story, and how we give women practical opportunities to build leadership skills in a supportive community."/>
+<meta property="og:url" content="https://www.willnet.ca/about.html"/>
+<meta property="og:image" content="https://www.willnet.ca/images/og-image.jpg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="WILLNET — Women in Learning &amp; Leadership Network"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="icon" href="favicon.ico" sizes="any"/>
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml"/>
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root{
+      --mint:#A9D8C8;
+      --mint-dark:#7fbfad;
+      --rose:#D889AA;
+      --rose-light:#e8a0bb;
+      --sage:#8FFBB1;
+      --mauve:#B77C8E;
+      --cream:#F6F5F1;
+      --charcoal:#2B2B2B;
+      --charcoal-mid:#3d3d3d;
+      --charcoal-soft:#5a5a5a;
+      --white:#ffffff;
+      --text-dark:#2B2B2B;
+      --text-mid:#3a3a3a;
+      --text-muted:#666666;
+      --border:rgba(169,216,200,.22);
+      --nav-h:76px;
+      --ease:cubic-bezier(.16,1,.3,1);
+    }
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-dark);overflow-x:hidden}
+
+    nav{position:fixed;top:0;left:0;right:0;z-index:500;height:var(--nav-h);padding:0 5%;display:flex;align-items:center;justify-content:space-between;background:rgba(43,43,43,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);transition:background .4s}
+    nav.scrolled{background:rgba(27,27,27,.98)}
+    .nav-logo{font-family:'Cormorant Garamond',serif;font-size:clamp(1.3rem,3vw,1.6rem);font-weight:600;color:var(--white);letter-spacing:.15em;text-decoration:none;z-index:601;position:relative}
+    .nav-logo img,.foot-logo img,footer .logo img{display:inline-block;vertical-align:-.02em;height:.7em;width:auto}
+    .nav-logo .ill{color:var(--rose)}
+    .nav-logo .net{color:var(--mint)}
+    .nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}
+    .nav-links a{color:rgba(255,255,255,.85);text-decoration:none;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;font-weight:500;transition:color .3s;position:relative}
+    .nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1px;background:var(--mint);transition:width .3s}
+    .nav-links a:hover{color:var(--mint)}.nav-links a:hover::after{width:100%}
+    .nav-links a.active{color:var(--mint)}.nav-links a.active::after{width:100%}
+    .nav-cta{background:transparent!important;border:1px solid var(--rose)!important;color:var(--rose)!important;padding:.5rem 1.3rem;border-radius:2px;transition:background .3s,color .3s!important}
+    .nav-cta::after{display:none!important}.nav-cta:hover{background:var(--rose)!important;color:var(--white)!important}
+    .hamburger{display:none;flex-direction:column;justify-content:space-between;width:28px;height:20px;cursor:pointer;z-index:601;background:none;border:none;padding:0}
+    .hamburger span{display:block;width:100%;height:1.5px;background:var(--white);border-radius:2px;transition:transform .4s var(--ease),opacity .3s,width .3s}
+    .hamburger.active span:nth-child(1){transform:translateY(9.25px) rotate(45deg)}
+    .hamburger.active span:nth-child(2){opacity:0;width:0}
+    .hamburger.active span:nth-child(3){transform:translateY(-9.25px) rotate(-45deg)}
+    .mobile-menu{position:fixed;inset:0;z-index:499;background:rgba(27,27,27,.97);display:flex;flex-direction:column;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:opacity .45s var(--ease),visibility .45s}
+    .mobile-menu.open{opacity:1;visibility:visible}
+    .mobile-menu ul{list-style:none;text-align:center}
+    .mobile-menu ul li{opacity:0;transform:translateY(24px);transition:opacity .4s,transform .4s}
+    .mobile-menu.open ul li:nth-child(1){opacity:1;transform:none;transition-delay:.08s}
+    .mobile-menu.open ul li:nth-child(2){opacity:1;transform:none;transition-delay:.14s}
+    .mobile-menu.open ul li:nth-child(3){opacity:1;transform:none;transition-delay:.20s}
+    .mobile-menu.open ul li:nth-child(4){opacity:1;transform:none;transition-delay:.26s}
+    .mobile-menu.open ul li:nth-child(5){opacity:1;transform:none;transition-delay:.32s}
+    .mobile-menu.open ul li:nth-child(6){opacity:1;transform:none;transition-delay:.38s}
+    .mobile-menu ul li a{display:block;padding:.75rem 2rem;font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,6vw,2.6rem);font-weight:300;color:rgba(255,255,255,.9);text-decoration:none;letter-spacing:.06em;transition:color .3s}
+    .mobile-menu ul li a:hover{color:var(--mint)}
+    .mobile-cta-wrap{margin-top:2rem;opacity:0;transform:translateY(20px);transition:opacity .4s .42s,transform .4s .42s}
+    .mobile-menu.open .mobile-cta-wrap{opacity:1;transform:none}
+    .mobile-socials{position:absolute;bottom:2.5rem;display:flex;gap:2rem;opacity:0;transition:opacity .4s .5s}
+    .mobile-menu.open .mobile-socials{opacity:1}
+    .mobile-socials span{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5);cursor:pointer;transition:color .3s}
+    .mobile-socials span:hover{color:var(--mint)}
+    body.menu-open{overflow:hidden}
+
+    .page-hero{background:var(--charcoal);padding:calc(var(--nav-h) + clamp(4rem,8vw,6rem)) 5% clamp(4rem,8vw,6rem);position:relative;overflow:hidden}
+    .page-hero-bg{position:absolute;inset:0;background-image:url('https://plus.unsplash.com/premium_photo-1683143646135-7f53b9e348c5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fGdyb3VwJTIwb2YlMjB3b21hbnxlbnwwfHwwfHx8MA%3D%3D');background-size:cover;background-position:center 20%}
+    .page-hero-tint{position:absolute;inset:0;background:linear-gradient(to right,rgba(43,43,43,.65) 0%,rgba(43,43,43,.4) 55%,rgba(43,43,43,.2) 100%)}
+    .hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(169,216,200,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(169,216,200,.04) 1px,transparent 1px);background-size:60px 60px;animation:gridMove 20s linear infinite}
+    @keyframes gridMove{0%{background-position:0 0}100%{background-position:60px 60px}}
+    .particles{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+    .particle{position:absolute;border-radius:50%;animation:particleRise linear infinite}
+    .particle:nth-child(odd){background:rgba(169,216,200,.18)}
+    .particle:nth-child(even){background:rgba(216,137,170,.14)}
+    @keyframes particleRise{0%{transform:translateY(100%) scale(0);opacity:0}10%{opacity:1}90%{opacity:.3}100%{transform:translateY(-20%) scale(1.2);opacity:0}}
+    .page-hero-inner{position:relative;z-index:2;max-width:1200px;margin:0 auto}
+    .breadcrumb{display:flex;align-items:center;gap:.5rem;margin-bottom:2rem;opacity:0;animation:fadeUp .6s var(--ease) .2s forwards}
+    .breadcrumb a{font-size:.75rem;color:rgba(255,255,255,.6);text-decoration:none;letter-spacing:.1em;text-transform:uppercase;transition:color .3s}
+    .breadcrumb a:hover{color:var(--mint)}
+    .breadcrumb span{font-size:.75rem;color:rgba(255,255,255,.35)}
+    .breadcrumb .current{font-size:.75rem;color:var(--mint);letter-spacing:.1em;text-transform:uppercase}
+    .page-hero-tag{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--mint);font-weight:600;margin-bottom:1.2rem;display:flex;align-items:center;gap:.8rem;opacity:0;animation:fadeUp .6s var(--ease) .3s forwards}
+    .page-hero-tag::before{content:'';width:30px;height:1px;background:var(--mint)}
+    .page-hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,6vw,5.5rem);font-weight:300;color:var(--white);line-height:1.1;opacity:0;animation:fadeUp .8s var(--ease) .4s forwards}
+    .page-hero-title em{font-style:italic;color:var(--rose-light)}
+    .page-hero-sub{max-width:620px;font-size:clamp(.95rem,1.5vw,1.1rem);line-height:1.85;color:rgba(255,255,255,.85);font-weight:300;margin-top:1.5rem;opacity:0;animation:fadeUp .7s var(--ease) .55s forwards}
+    .hero-scroll-hint{display:flex;align-items:center;gap:.8rem;margin-top:3rem;opacity:0;animation:fadeUp .6s var(--ease) .8s forwards;color:rgba(255,255,255,.5);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase}
+    .scroll-line{width:40px;height:1px;background:rgba(255,255,255,.3);position:relative;overflow:hidden}
+    .scroll-line::after{content:'';position:absolute;left:-100%;top:0;width:100%;height:100%;background:var(--mint);animation:scrollAnim 2s ease-in-out 1.2s infinite}
+    @keyframes scrollAnim{0%{left:-100%}50%{left:100%}100%{left:100%}}
+    .hero-deco-text{position:absolute;bottom:-2rem;right:4%;font-family:'Cormorant Garamond',serif;font-size:clamp(6rem,14vw,12rem);font-weight:700;color:rgba(255,255,255,.025);letter-spacing:-.02em;pointer-events:none;user-select:none;line-height:1}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+
+    .section{max-width:1200px;margin:0 auto;padding:clamp(4rem,8vw,7rem) 5%}
+    .section-tag{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--rose);font-weight:600;margin-bottom:1rem;display:flex;align-items:center;gap:.8rem}
+    .section-tag::before{content:'';width:30px;height:1px;background:var(--rose)}
+    .section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:300;color:var(--text-dark);line-height:1.25;margin-bottom:1.5rem}
+    .section-title em{font-style:italic;color:var(--mint-dark)}
+    .section-title.light{color:var(--white)}
+    .section-title.light em{color:var(--rose-light)}
+    .btn-primary{background:var(--rose);color:var(--white);border:none;padding:.9rem 2.2rem;font-family:'DM Sans',sans-serif;font-size:.85rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;text-decoration:none;display:inline-block;border-radius:2px;position:relative;overflow:hidden;transition:background .3s,transform .25s,box-shadow .3s}
+    .btn-primary:hover{background:var(--rose-light);transform:translateY(-2px);box-shadow:0 8px 30px rgba(216,137,170,.3)}
+    .btn-outline-mint{background:transparent;border:1px solid var(--mint);color:var(--mint);padding:.9rem 2.2rem;font-family:'DM Sans',sans-serif;font-size:.85rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;text-decoration:none;display:inline-block;border-radius:2px;transition:background .3s,color .3s,transform .25s}
+    .btn-outline-mint:hover{background:var(--mint);color:var(--charcoal);transform:translateY(-2px)}
+    .reveal{opacity:0;transform:translateY(32px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+    .reveal-left{opacity:0;transform:translateX(-32px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+    .reveal-left.visible{opacity:1;transform:translateX(0)}
+    .reveal-right{opacity:0;transform:translateX(32px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+    .reveal-right.visible{opacity:1;transform:translateX(0)}
+
+    .story-section{background:var(--cream)}
+    .story-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:6rem;align-items:center}
+    .story-text p{font-size:1rem;line-height:1.95;color:var(--text-mid);font-weight:400;margin-bottom:1.2rem}
+    .story-text p strong{color:var(--mauve);font-weight:600}
+    .story-text p:first-of-type{font-size:1.08rem;color:var(--text-dark);font-weight:400}
+    .story-pull{margin:2.5rem 0;padding:1.6rem 2rem;border-left:3px solid var(--mint);background:rgba(169,216,200,.08);border-radius:0 8px 8px 0}
+    .story-pull p{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-style:italic;color:var(--mauve);line-height:1.6;font-weight:400;margin:0}
+    .story-visual{position:relative}
+    .story-img-wrap{position:relative;aspect-ratio:4/5;background:linear-gradient(135deg,var(--charcoal-mid),var(--charcoal));border-radius:12px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+    .story-img-wrap img{width:100%;height:100%;object-fit:cover;object-position:center top;position:absolute;inset:0;display:block}
+    .story-img-wrap::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(43,43,43,.7) 0%,transparent 50%)}
+    .story-img-caption{position:absolute;bottom:1.5rem;left:1.5rem;right:1.5rem;z-index:1}
+    .story-img-caption h3{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:var(--white)}
+    .story-img-caption p{font-size:.78rem;color:var(--mint);margin-top:.2rem;letter-spacing:.06em}
+    .story-accent-block{position:absolute;top:-20px;left:-20px;width:80px;height:80px;background:var(--mint);border-radius:6px;z-index:-1;opacity:.7}
+    .story-accent-ring{position:absolute;bottom:-20px;right:-20px;width:60px;height:60px;border:2px solid var(--rose);border-radius:6px;z-index:-1}
+    .story-stat-badge{position:absolute;bottom:2rem;right:-1.5rem;background:var(--white);border-radius:10px;padding:1.2rem 1.5rem;box-shadow:0 20px 60px rgba(43,43,43,.15);text-align:center;min-width:130px;animation:floatBadge 4s ease-in-out infinite}
+    @keyframes floatBadge{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+    .story-stat-badge .b-num{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;color:var(--charcoal);line-height:1}
+    .story-stat-badge .b-label{font-size:.72rem;color:var(--charcoal-soft);letter-spacing:.08em;margin-top:.2rem}
+
+    .mv-section{background:var(--charcoal);padding:clamp(4rem,8vw,7rem) 0;position:relative;overflow:hidden}
+    .mv-section::before{content:'';position:absolute;top:-150px;right:-150px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(169,216,200,.05),transparent 70%);pointer-events:none}
+    .mv-inner{max-width:1200px;margin:0 auto;padding:0 5%}
+    .mv-grid{display:grid;grid-template-columns:1fr 1px 1fr;gap:0;margin-top:3rem}
+    .mv-divider{background:rgba(169,216,200,.15);align-self:stretch}
+    .mv-card{padding:3rem clamp(2rem,4vw,4rem)}
+    .mv-card:first-child{padding-left:0}
+    .mv-card:last-child{padding-right:0}
+    .mv-icon{font-size:2.5rem;margin-bottom:1.5rem}
+    .mv-label{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--mint);font-weight:600;margin-bottom:.8rem;display:flex;align-items:center;gap:.7rem}
+    .mv-label::before{content:'';width:20px;height:1px;background:var(--mint)}
+    .mv-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.4rem,2.5vw,2rem);font-weight:300;color:var(--white);line-height:1.3;margin-bottom:1rem}
+    .mv-text{font-size:.95rem;color:rgba(255,255,255,.78);line-height:1.85;font-weight:300}
+
+    .values-section{background:var(--cream)}
+    .values-intro{max-width:680px;margin-bottom:4rem}
+    .values-intro p{font-size:1rem;color:var(--text-mid);line-height:1.85;font-weight:400}
+    .values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+    .value-card{background:var(--white);border:1px solid rgba(43,43,43,.07);border-radius:12px;padding:2.5rem 2rem;position:relative;overflow:hidden;transition:border-color .35s,transform .35s,box-shadow .35s;cursor:default}
+    .value-card::before{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--mint),var(--rose));transform:scaleX(0);transition:transform .4s;transform-origin:left}
+    .value-card:hover{border-color:var(--mint);transform:translateY(-6px);box-shadow:0 20px 60px rgba(169,216,200,.12)}
+    .value-card:hover::before{transform:scaleX(1)}
+    .value-num{font-family:'Cormorant Garamond',serif;font-size:4.5rem;font-weight:300;color:rgba(43,43,43,.05);line-height:1;position:absolute;top:.5rem;right:1.5rem}
+    .value-icon-wrap{width:48px;height:48px;background:rgba(169,216,200,.12);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:1.2rem;transition:background .3s}
+    .value-card:hover .value-icon-wrap{background:rgba(169,216,200,.25)}
+    .value-name{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:600;color:var(--text-dark);margin-bottom:.6rem}
+    .value-desc{font-size:.9rem;color:#555555;line-height:1.75}
+    .value-phrase{margin-top:1rem;font-style:italic;font-size:.84rem;color:var(--mauve);font-weight:400}
+
+    .founder-section{background:var(--white);padding:clamp(4rem,8vw,7rem) 0;position:relative;overflow:hidden}
+    .founder-inner{max-width:1200px;margin:0 auto;padding:0 5%}
+    .founder-layout{display:grid;grid-template-columns:420px 1fr;gap:5rem;align-items:start}
+    .founder-portrait-wrap{position:relative}
+    .founder-portrait{width:100%;aspect-ratio:3/4;background:linear-gradient(160deg,var(--charcoal-mid) 0%,var(--charcoal) 100%);border-radius:12px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+    .founder-portrait img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;position:absolute;inset:0}
+    .founder-portrait::before{content:'';position:absolute;bottom:0;left:0;right:0;height:45%;background:linear-gradient(to top,rgba(27,27,27,.9),transparent)}
+    .founder-overlay{position:absolute;bottom:2rem;left:2rem;right:2rem;z-index:1}
+    .f-name{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:600;color:var(--white)}
+    .f-title{font-size:.78rem;color:var(--mint);letter-spacing:.12em;margin-top:.2rem}
+    .f-social{display:flex;gap:.7rem;margin-top:1rem}
+    .f-social-btn{width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.8);font-size:.75rem;cursor:pointer;transition:background .3s,border-color .3s}
+    .f-social-btn:hover{background:var(--mint);border-color:var(--mint);color:var(--charcoal)}
+    .founder-acc1{position:absolute;top:-16px;right:-16px;width:70px;height:70px;background:var(--mint);border-radius:6px;z-index:-1;opacity:.7}
+    .founder-acc2{position:absolute;bottom:-16px;left:-16px;width:50px;height:50px;border:2px solid var(--rose);border-radius:6px;z-index:-1}
+    .credentials{display:flex;flex-direction:column;gap:.75rem;margin-top:1.5rem}
+    .cred-item{display:flex;align-items:center;gap:.8rem;padding:.8rem 1rem;background:rgba(169,216,200,.07);border:1px solid rgba(169,216,200,.18);border-radius:6px}
+    .cred-icon{font-size:1rem;flex-shrink:0}
+    .cred-text{font-size:.82rem;color:#444444;line-height:1.4}
+    .cred-text strong{display:block;font-size:.72rem;font-weight:600;color:var(--mint-dark);letter-spacing:.05em;text-transform:uppercase;margin-bottom:.1rem}
+    .bio-text p{font-size:.97rem;line-height:1.95;color:#3a3a3a;font-weight:400;margin-bottom:1.2rem}
+    .bio-text p strong{color:var(--mauve);font-weight:600}
+    .bio-quote{margin:2.5rem 0;padding:2rem 2.5rem;background:var(--charcoal);border-radius:10px;position:relative;overflow:hidden}
+    .bio-quote::before{content:'\201C';position:absolute;top:-1rem;left:1.5rem;font-family:'Cormorant Garamond',serif;font-size:8rem;color:rgba(169,216,200,.08);line-height:1;pointer-events:none}
+    .bio-quote p{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-style:italic;color:var(--mint);line-height:1.65;font-weight:400;position:relative;z-index:1}
+    .bio-quote cite{display:block;font-style:normal;font-size:.75rem;color:rgba(255,255,255,.55);letter-spacing:.1em;text-transform:uppercase;margin-top:1rem}
+    .bio-pillars{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:2rem}
+    .pillar-item{padding:1.2rem 1.5rem;background:rgba(169,216,200,.06);border:1px solid rgba(169,216,200,.18);border-radius:8px;transition:border-color .3s,background .3s}
+    .pillar-item:hover{border-color:rgba(169,216,200,.4);background:rgba(169,216,200,.1)}
+    .pillar-item h4{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:600;color:var(--text-dark);margin-bottom:.3rem}
+    .pillar-item p{font-size:.82rem;color:#666666;line-height:1.55}
+
+    .timeline-section{background:var(--charcoal);padding:clamp(4rem,8vw,7rem) 0;position:relative;overflow:hidden}
+    .timeline-bg-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.06;pointer-events:none}
+    .timeline-inner{max-width:1000px;margin:0 auto;padding:0 5%}
+    .timeline{position:relative;margin-top:4rem;display:grid;grid-template-columns:1fr 1fr;gap:2rem 4rem}
+    .timeline::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,transparent,rgba(169,216,200,.3) 10%,rgba(169,216,200,.3) 90%,transparent);transform:translateX(-50%)}
+    .tl-item{position:relative;padding:0}
+    .tl-item:nth-child(odd){grid-column:1;text-align:right}
+    .tl-item:nth-child(even){grid-column:2;text-align:left}
+    .tl-item::after{content:'';position:absolute;top:1.6rem;width:14px;height:14px;border-radius:50%;background:var(--mint);border:3px solid var(--charcoal);box-shadow:0 0 0 1px var(--mint);transition:transform .3s}
+    .tl-item:nth-child(odd)::after{right:-2.15rem;transform:translateX(50%)}
+    .tl-item:nth-child(even)::after{left:-2.15rem;transform:translateX(-50%)}
+    .tl-year{display:inline-block;font-family:'Cormorant Garamond',serif;font-size:.82rem;font-weight:600;color:var(--mint);letter-spacing:.15em;text-transform:uppercase;margin-bottom:.6rem}
+    .tl-card{background:rgba(255,255,255,.06);border:1px solid rgba(169,216,200,.15);border-radius:8px;padding:1.5rem 1.8rem;transition:border-color .35s,background .35s,transform .35s;display:inline-block;width:100%;text-align:left}
+    .tl-item:nth-child(odd) .tl-card{text-align:right}
+    .tl-item:hover .tl-card{border-color:rgba(169,216,200,.35);background:rgba(169,216,200,.06);transform:translateY(-3px)}
+    .tl-card h4{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--white);margin-bottom:.5rem}
+    .tl-card p{font-size:.85rem;color:rgba(255,255,255,.7);line-height:1.65}
+    .tl-item.tl-now .tl-card{border-color:rgba(169,216,200,.3);background:rgba(169,216,200,.07)}
+
+    .impact-section{background:var(--cream)}
+    .impact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;margin-top:3rem}
+    .impact-card{text-align:center;padding:2.5rem 1.5rem;background:var(--white);border:1px solid rgba(43,43,43,.07);border-radius:12px;transition:border-color .3s,transform .3s,box-shadow .3s;position:relative;overflow:hidden}
+    .impact-card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--mint),var(--rose));transform:scaleX(0);transition:transform .4s;transform-origin:left}
+    .impact-card:hover{border-color:var(--mint);transform:translateY(-5px);box-shadow:0 20px 60px rgba(169,216,200,.12)}
+    .impact-card:hover::after{transform:scaleX(1)}
+    .impact-num{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5vw,4rem);font-weight:300;color:var(--charcoal);line-height:1}
+    .impact-label{font-size:.8rem;color:#666666;letter-spacing:.08em;text-transform:uppercase;margin-top:.5rem;line-height:1.4}
+    .impact-icon{font-size:1.5rem;margin-bottom:1rem}
+
+    .community-section{background:var(--charcoal);padding:clamp(4rem,8vw,7rem) 0;position:relative;overflow:hidden}
+    .comm-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.05;pointer-events:none}
+    .community-inner{max-width:1200px;margin:0 auto;padding:0 5%}
+    .community-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;margin-top:3rem}
+    .community-text p{font-size:.97rem;color:rgba(255,255,255,.78);line-height:1.9;font-weight:300;margin-bottom:1.2rem}
+    .community-text p strong{color:var(--mint);font-weight:600}
+    .community-features{display:flex;flex-direction:column;gap:1rem;margin-top:2rem}
+    .comm-feat{display:flex;align-items:flex-start;gap:1rem;padding:1.2rem;background:rgba(255,255,255,.04);border:1px solid rgba(169,216,200,.12);border-radius:8px;transition:border-color .3s,background .3s}
+    .comm-feat:hover{border-color:rgba(169,216,200,.3);background:rgba(169,216,200,.05)}
+    .comm-feat-icon{font-size:1.3rem;flex-shrink:0;margin-top:.1rem}
+    .comm-feat-text h4{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:600;color:var(--white);margin-bottom:.3rem}
+    .comm-feat-text p{font-size:.84rem;color:rgba(255,255,255,.68);line-height:1.6;margin:0}
+    .community-visual{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+    .comm-card{background:rgba(255,255,255,.05);border:1px solid rgba(169,216,200,.12);border-radius:10px;padding:1.8rem 1.5rem;text-align:center;transition:border-color .3s,transform .3s}
+    .comm-card:hover{border-color:rgba(169,216,200,.3);transform:translateY(-5px)}
+    .comm-card:first-child{grid-column:span 2;background:rgba(169,216,200,.05);border-color:rgba(169,216,200,.18)}
+    .comm-card-icon{font-size:2rem;margin-bottom:.8rem}
+    .comm-card-title{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--white);margin-bottom:.4rem}
+    .comm-card-sub{font-size:.82rem;color:rgba(255,255,255,.65);line-height:1.5}
+
+    .cta-strip{background:var(--mint);padding:clamp(3rem,6vw,5rem) 5%;position:relative;overflow:hidden}
+    .cta-strip::before{content:'WILLNET';position:absolute;right:-2%;top:50%;transform:translateY(-50%);font-family:'Cormorant Garamond',serif;font-size:clamp(5rem,12vw,10rem);font-weight:700;color:rgba(43,43,43,.06);letter-spacing:-.02em;white-space:nowrap;pointer-events:none}
+    .cta-strip-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;position:relative;z-index:1}
+    .cta-strip-text h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:300;color:var(--charcoal);line-height:1.25}
+    .cta-strip-text h2 em{font-style:italic}
+    .cta-strip-text p{font-size:.95rem;color:rgba(43,43,43,.72);line-height:1.65;margin-top:.5rem;max-width:500px}
+    .cta-strip-actions{display:flex;gap:1rem;flex-wrap:wrap}
+    .btn-dark{background:var(--charcoal);color:var(--white);border:none;padding:.9rem 2.2rem;font-family:'DM Sans',sans-serif;font-size:.85rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;text-decoration:none;display:inline-block;border-radius:2px;transition:background .3s,transform .25s}
+    .btn-dark:hover{background:var(--charcoal-mid);transform:translateY(-2px)}
+    .btn-outline-dark{background:transparent;border:1px solid rgba(43,43,43,.4);color:var(--charcoal);padding:.9rem 2.2rem;font-family:'DM Sans',sans-serif;font-size:.85rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;text-decoration:none;display:inline-block;border-radius:2px;transition:border-color .3s,background .3s,transform .25s}
+    .btn-outline-dark:hover{border-color:var(--charcoal);background:rgba(43,43,43,.08);transform:translateY(-2px)}
+
+    footer{background:#1a1a1a;padding:clamp(3rem,6vw,4rem) 5% 2rem}
+    .footer-top{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,.08)}
+    .footer-brand .logo{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:600;color:var(--white);letter-spacing:.15em;margin-bottom:.3rem}
+    .footer-brand .logo .ill{color:var(--rose)}
+    .footer-brand .logo .net{color:var(--mint)}
+    .footer-brand .tagline{font-size:.75rem;color:rgba(255,255,255,.45);letter-spacing:.2em;text-transform:uppercase;margin-bottom:1.2rem}
+    .footer-brand p{font-size:.87rem;color:rgba(255,255,255,.5);line-height:1.75;max-width:280px}
+    .footer-col h4{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mint);font-weight:600;margin-bottom:1.2rem}
+    .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:.7rem}
+    .footer-col ul li a{font-size:.87rem;color:rgba(255,255,255,.55);text-decoration:none;transition:color .3s}
+    .footer-col ul li a:hover{color:var(--mint)}
+    .footer-bottom{max-width:1200px;margin:0 auto;padding-top:1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+    .footer-bottom p{font-size:.78rem;color:rgba(255,255,255,.35)}
+    .footer-bottom p span{color:var(--rose)}
+
+    @media(max-width:1024px){
+      .story-grid{grid-template-columns:1fr;gap:3rem}
+      .story-visual{max-width:480px}
+      .founder-layout{grid-template-columns:1fr;max-width:700px}
+      .founder-portrait-wrap{max-width:380px}
+      .community-grid{grid-template-columns:1fr;gap:3rem}
+      .impact-grid{grid-template-columns:repeat(2,1fr)}
+      .footer-top{grid-template-columns:1fr 1fr;gap:2rem}
+    }
+    @media(max-width:900px){
+      .nav-links{display:none}.hamburger{display:flex}
+      .mv-grid{grid-template-columns:1fr;gap:0}
+      .mv-divider{height:1px;width:100%;align-self:auto}
+      .mv-card:first-child{padding-left:0;padding-bottom:2rem}
+      .mv-card:last-child{padding-right:0;padding-top:2rem}
+      .values-grid{grid-template-columns:1fr 1fr}
+      .timeline{grid-template-columns:1fr;gap:1.5rem}
+      .timeline::before{left:8px;transform:none}
+      .tl-item:nth-child(odd),.tl-item:nth-child(even){grid-column:1;text-align:left;padding-left:2rem}
+      .tl-item:nth-child(odd)::after,.tl-item:nth-child(even)::after{left:-1.1rem;right:auto;transform:translateX(-50%)}
+      .tl-item:nth-child(odd) .tl-card{text-align:left}
+      .bio-pillars{grid-template-columns:1fr}
+      .cta-strip-inner{flex-direction:column;align-items:flex-start}
+    }
+    @media(max-width:600px){
+      :root{--nav-h:64px}
+      .values-grid{grid-template-columns:1fr}
+      .impact-grid{grid-template-columns:1fr 1fr}
+      .community-visual{grid-template-columns:1fr}
+      .comm-card:first-child{grid-column:span 1}
+      .footer-top{grid-template-columns:1fr}
+      .footer-bottom{flex-direction:column;text-align:center}
+      .cta-strip-actions{flex-direction:column;align-items:stretch}
+      .btn-dark,.btn-outline-dark{text-align:center}
+    }
+    @media(max-width:400px){.impact-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Site navigation">
+  <ul>
+    <li><a href="index.html" class="mlink">Home</a></li>
+    <li><a href="about.html" class="mlink">About</a></li>
+    <li><a href="program.html" class="mlink">Programs</a></li>
+    <li><a href="member.html" class="mlink">Membership</a></li>
+    <li><a href="podcast.html" class="mlink">Podcast</a></li>
+    <li><a href="founder.html" class="mlink">Founder</a></li>
+  </ul>
+  <div class="mobile-cta-wrap">
+    <a href="member.html" class="mlink" style="background:var(--rose);color:var(--white);padding:1rem 2.5rem;font-family:'DM Sans',sans-serif;font-size:.85rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;display:inline-block;border-radius:2px;">Join the Community</a>
+  </div>
+  <div class="mobile-socials">
+    <span>Instagram</span><span>LinkedIn</span><span>Spotify</span>
+  </div>
+</div>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo"><img src="images/willnet-logo.svg" alt="WILLNET home" width="1336" height="184"/></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="program.html">Programs</a></li>
+    <li><a href="member.html">Membership</a></li>
+    <li><a href="podcast.html">Podcast</a></li>
+    <li><a href="founder.html">Founder</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="member.html" class="nav-cta">Join Now</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileMenu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-tint"></div>
+  <div class="hero-grid"></div>
+  <div class="particles" id="particles"></div>
+  <div class="page-hero-inner">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a><span>/</span><span class="current">About</span>
+    </div>
+    <div class="page-hero-tag">Our Story</div>
+    <h1 class="page-hero-title">More than a network —<br><em>a movement</em></h1>
+    <p class="page-hero-sub">WILLNET was born from a simple conviction: leadership is not a gift given to a select few. It can be learned, practiced, and cultivated — and every woman deserves the space to do exactly that.</p>
+    <div class="hero-scroll-hint"><div class="scroll-line"></div><span>Scroll to explore</span></div>
+  </div>
+  <div class="hero-deco-text">ABOUT</div>
+</section>
+
+<section class="story-section">
+  <div class="section">
+    <div class="story-grid">
+      <div class="story-left">
+        <div class="section-tag reveal">Our Origin</div>
+        <h2 class="section-title reveal">How WILLNET <em>came to be</em></h2>
+        <div class="story-text reveal">
+          <p>WILLNET (Women in Learning &amp; Leadership Network) was created to provide women with practical opportunities to grow their leadership skills while building meaningful connections with other women on similar journeys.</p>
+          <p>Too often, women are told to simply <strong>"be confident"</strong> or <strong>"step up,"</strong> yet they are rarely given the tools, mentorship, or supportive environments needed to actually develop those leadership capabilities.</p>
+        </div>
+        <div class="story-pull reveal">
+          <p>"We bridge the gap between potential and possibility — creating the environments that talented women have always deserved."</p>
+        </div>
+        <div class="story-text reveal">
+          <p>At WILLNET, leadership is not about titles. It is about influence, growth, and the courage to impact your world — whether that's your workplace, your family, your community, or beyond. We believe it can be learned, practiced, and developed in community.</p>
+          <p>This is not just a network. It is a space where women <strong>learn together</strong>, <strong>support one another</strong>, and <strong>rise together</strong>.</p>
+        </div>
+      </div>
+      <div class="story-visual reveal-right">
+        <div class="story-img-wrap">
+          <img src="images/founder-aisha-umar-portrait.jpg" alt="Aisha Umar, Founder of WILLNET, in a pale blue suit"/>
+          <div class="story-img-caption">
+            <h3>Founded with Purpose</h3>
+            <p>Building the infrastructure women deserve</p>
+          </div>
+        </div>
+        <div class="story-accent-block"></div>
+        <div class="story-accent-ring"></div>
+        <div class="story-stat-badge">
+          <div class="b-num">10+</div>
+          <div class="b-label">Years of Leadership Experience</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mv-section">
+  <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(169,216,200,.03),rgba(216,137,170,.03));pointer-events:none"></div>
+  <div class="mv-inner">
+    <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto">
+      <div class="section-tag" style="justify-content:center;color:var(--mint)">What Drives Us</div>
+      <h2 class="section-title light">Our mission &amp; <em>vision</em></h2>
+    </div>
+    <div class="mv-grid">
+      <div class="mv-card reveal-left">
+        <div class="mv-icon">🎯</div>
+        <div class="mv-label">Mission</div>
+        <h3 class="mv-title">Empowering women through education, mentorship, and community</h3>
+        <p class="mv-text">WILLNET exists to empower women and girls through leadership education, mentorship, and community support that helps them grow personally, professionally, and socially. We provide the tools, connections, and environments that enable every woman to step into her full leadership potential.</p>
+      </div>
+      <div class="mv-divider"></div>
+      <div class="mv-card reveal-right">
+        <div class="mv-icon">🌍</div>
+        <div class="mv-label">Vision</div>
+        <h3 class="mv-title">A global community of confident, capable women leaders</h3>
+        <p class="mv-text">To cultivate a global community of confident, capable women leaders who are equipped to influence their industries, strengthen their communities, and inspire the next generation. We envision a world where every woman has access to the growth, mentorship, and opportunity she needs to lead.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="values-section">
+  <div class="section">
+    <div class="values-intro reveal">
+      <div class="section-tag">What We Stand For</div>
+      <h2 class="section-title">Our core <em>values</em></h2>
+      <p>These five values aren't aspirational posters — they are the operating system behind every program, event, and decision we make at WILLNET.</p>
+    </div>
+    <div class="values-grid">
+      <div class="value-card reveal" style="transition-delay:.05s">
+        <div class="value-num">01</div><div class="value-icon-wrap">🌱</div>
+        <div class="value-name">Growth</div>
+        <div class="value-desc">Leadership is a lifelong learning journey, not a destination. We prioritize continuous development, intellectual curiosity, and the courage to keep evolving.</div>
+        <div class="value-phrase">"Always a student, always growing."</div>
+      </div>
+      <div class="value-card reveal" style="transition-delay:.12s">
+        <div class="value-num">02</div><div class="value-icon-wrap">🤝</div>
+        <div class="value-name">Community</div>
+        <div class="value-desc">We believe women grow stronger when they grow together. Real community is built on trust, shared experiences, and the genuine desire to see others succeed.</div>
+        <div class="value-phrase">"Together we rise, together we lead."</div>
+      </div>
+      <div class="value-card reveal" style="transition-delay:.19s">
+        <div class="value-num">03</div><div class="value-icon-wrap">✨</div>
+        <div class="value-name">Confidence</div>
+        <div class="value-desc">We help women find, develop, and amplify their voice, presence, and influence. True confidence isn't the absence of doubt — it's the decision to move forward anyway.</div>
+        <div class="value-phrase">"Your voice matters. Use it."</div>
+      </div>
+      <div class="value-card reveal" style="transition-delay:.26s">
+        <div class="value-num">04</div><div class="value-icon-wrap">🎯</div>
+        <div class="value-name">Impact</div>
+        <div class="value-desc">Our goal is not only personal development — it is meaningful contribution to society. Every leader we develop creates ripples that touch families, organizations, and communities.</div>
+        <div class="value-phrase">"Leadership that outlasts the room."</div>
+      </div>
+      <div class="value-card reveal" style="transition-delay:.33s">
+        <div class="value-num">05</div><div class="value-icon-wrap">🚪</div>
+        <div class="value-name">Access</div>
+        <div class="value-desc">Opportunities should not be limited by background or circumstance. We intentionally design WILLNET to create pathways for women from all walks of life.</div>
+        <div class="value-phrase">"No woman left behind."</div>
+      </div>
+      <div class="value-card reveal" style="transition-delay:.40s;background:var(--charcoal);border-color:rgba(169,216,200,.2)">
+        <div class="value-num" style="color:rgba(169,216,200,.1)">→</div>
+        <div class="value-icon-wrap" style="background:rgba(169,216,200,.15)">🌟</div>
+        <div class="value-name" style="color:var(--white)">These values in action</div>
+        <div class="value-desc" style="color:rgba(255,255,255,.75)">Every program, event, and initiative we run is designed with all five values in mind. They are not separate ideas — they are one integrated philosophy.</div>
+        <div style="margin-top:1.5rem"><a href="program.html" class="btn-outline-mint" style="font-size:.75rem;padding:.6rem 1.3rem">See Our Programs</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="founder-section">
+  <div class="founder-inner">
+    <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto 4rem">
+      <div class="section-tag" style="justify-content:center">Leadership Behind WILLNET</div>
+      <h2 class="section-title">Meet the <em>founder</em></h2>
+    </div>
+    <div class="founder-layout">
+      <div class="founder-portrait-wrap reveal-left">
+        <div class="founder-portrait">
+          <img
+            src="images/founder-aisha-umar-office.jpg"
+            alt="Aisha Umar, Founder of WILLNET, seated in a modern office"
+            onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=800&q=82&fit=crop&crop=focalpoint&fp-y=0.2'"
+          />
+          <div class="founder-overlay">
+            <div class="f-name">Aisha Umar</div>
+            <div class="f-title">Founder &amp; CEO, WILLNET</div>
+            <div class="f-social">
+              <div class="f-social-btn">in</div>
+              <div class="f-social-btn">tw</div>
+              <div class="f-social-btn">ig</div>
+            </div>
+          </div>
+        </div>
+        <div class="founder-acc1"></div>
+        <div class="founder-acc2"></div>
+        <div class="credentials">
+          <div class="cred-item"><div class="cred-icon">🏛️</div><div class="cred-text"><strong>10+ Years Experience</strong>Leadership across nonprofit, business, and community sectors</div></div>
+          <div class="cred-item"><div class="cred-icon">📋</div><div class="cred-text"><strong>Specialisation</strong>Program development, leadership training, social impact</div></div>
+          <div class="cred-item"><div class="cred-icon">🌍</div><div class="cred-text"><strong>Vision</strong>Global women's leadership development ecosystem</div></div>
+        </div>
+      </div>
+      <div class="founder-bio reveal-right">
+        <div class="section-tag">The person behind the mission</div>
+        <h2 class="section-title">Aisha Umar — <em>leader, strategist, community builder</em></h2>
+        <div class="bio-text">
+          <p>WILLNET was founded by <strong>Aisha Umar</strong>, a leader deeply committed to empowering women and supporting leadership development at every stage of life.</p>
+          <p>With more than a decade of experience across nonprofit, business, and community sectors, Aisha has worked extensively in program development, leadership training, and social impact initiatives.</p>
+          <p>Throughout her career, Aisha observed a consistent pattern: talented women — brilliant, capable, ready — holding back. Not because of lack of ambition, but because the infrastructure to support their growth simply wasn't there. <strong>WILLNET was created to change that.</strong></p>
+        </div>
+        <div class="bio-quote">
+          <p>"Leadership is not limited to titles — it is about influence, growth, and the courage to step forward. Every woman who steps up creates permission for the next one to follow."</p>
+          <cite>— Aisha Umar, Founder of WILLNET</cite>
+        </div>
+        <div class="bio-pillars">
+          <div class="pillar-item"><h4>Program Development</h4><p>Designing learning experiences that create real, lasting change in how women lead.</p></div>
+          <div class="pillar-item"><h4>Community Building</h4><p>Creating networks of trust where women feel safe to grow and take bold risks.</p></div>
+          <div class="pillar-item"><h4>Leadership Training</h4><p>Facilitating practical, applicable skill-building grounded in real-world scenarios.</p></div>
+          <div class="pillar-item"><h4>Social Impact</h4><p>Ensuring that leadership development extends far beyond the individual — into society.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="timeline-section">
+  <img class="timeline-bg-img" src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1400&q=50&fit=crop" alt=""/>
+  <div class="timeline-inner">
+    <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto">
+      <div class="section-tag" style="color:var(--mint);justify-content:center">Our Journey</div>
+      <h2 class="section-title light">Building something <em>that lasts</em></h2>
+    </div>
+    <div class="timeline">
+      <div class="tl-item reveal"><div class="tl-year">2014</div><div class="tl-card"><h4>The Idea is Born</h4><p>After years of observing the leadership gap that talented women faced, the vision for WILLNET begins to take shape.</p></div></div>
+      <div class="tl-item reveal" style="transition-delay:.1s"><div class="tl-year">2017</div><div class="tl-card"><h4>First Community Events</h4><p>WILLNET hosts its inaugural community gatherings, bringing together women for authentic connection and learning.</p></div></div>
+      <div class="tl-item reveal" style="transition-delay:.2s"><div class="tl-year">2019</div><div class="tl-card"><h4>Mentorship Circles Launch</h4><p>The flagship Mentorship Circles program is established, providing structured peer-to-peer support and guided leadership reflection.</p></div></div>
+      <div class="tl-item reveal" style="transition-delay:.3s"><div class="tl-year">2021</div><div class="tl-card"><h4>Girls Corner Initiative</h4><p>WILLNET expands its mission to reach teenage girls through Girls Corner, building the next generation of confident leaders early.</p></div></div>
+      <div class="tl-item reveal" style="transition-delay:.4s"><div class="tl-year">2023</div><div class="tl-card"><h4>The WILLNET Podcast</h4><p>Honest conversations about leadership, career, and life go global — now reaching women worldwide through the WILLNET Podcast.</p></div></div>
+      <div class="tl-item tl-now reveal" style="transition-delay:.5s"><div class="tl-year">Now</div><div class="tl-card"><h4>Growing Global</h4><p>WILLNET is expanding its reach, refining its programs, and building towards a global leadership network with conferences, fellowships, and publications.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="impact-section">
+  <div class="section">
+    <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto 1rem">
+      <div class="section-tag" style="justify-content:center">Our Impact</div>
+      <h2 class="section-title">Numbers that <em>tell the story</em></h2>
+    </div>
+    <div class="impact-grid">
+      <div class="impact-card reveal" style="transition-delay:.05s"><div class="impact-icon">👩‍💼</div><div class="impact-num" data-count="500" data-suffix="+">0+</div><div class="impact-label">Women Reached Across Programs</div></div>
+      <div class="impact-card reveal" style="transition-delay:.12s"><div class="impact-icon">🎓</div><div class="impact-num" data-count="10" data-suffix="+">0+</div><div class="impact-label">Years of Leadership Experience</div></div>
+      <div class="impact-card reveal" style="transition-delay:.19s"><div class="impact-icon">🤝</div><div class="impact-num" data-count="3">0</div><div class="impact-label">Flagship Programs Running</div></div>
+      <div class="impact-card reveal" style="transition-delay:.26s"><div class="impact-icon">🌱</div><div class="impact-num" data-count="5">0</div><div class="impact-label">Core Values Powering Everything</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="community-section">
+  <img class="comm-bg" src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1400&q=50&fit=crop" alt=""/>
+  <div class="community-inner">
+    <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto">
+      <div class="section-tag" style="color:var(--mint);justify-content:center">Who We Serve</div>
+      <h2 class="section-title light">Built for women at <em>every stage</em></h2>
+    </div>
+    <div class="community-grid">
+      <div class="community-text reveal-left">
+        <p>WILLNET is designed for women who believe leadership is something that can be learned and developed. Whether you are just starting out, navigating a leadership role, building a business, or mentoring the next generation — there is a place for you here.</p>
+        <p>Our community provides <strong>spaces where women can develop leadership skills</strong> through practical learning, <strong>connect with mentors and peers</strong> who support their growth, gain confidence in their voice and abilities, and access opportunities for career advancement.</p>
+        <div class="community-features">
+          <div class="comm-feat"><div class="comm-feat-icon">🚀</div><div class="comm-feat-text"><h4>Early Career Women</h4><p>Building your foundation — find your voice, clarify your direction, and start leading now.</p></div></div>
+          <div class="comm-feat"><div class="comm-feat-icon">💼</div><div class="comm-feat-text"><h4>Mid-Career Leaders</h4><p>Navigating growth, promotions, and influence — lead with confidence and strategy.</p></div></div>
+          <div class="comm-feat"><div class="comm-feat-icon">🌟</div><div class="comm-feat-text"><h4>Senior Leaders &amp; Mentors</h4><p>Use your experience to uplift others while continuing to expand your own impact.</p></div></div>
+        </div>
+      </div>
+      <div class="community-visual reveal-right">
+        <div class="comm-card" style="padding:0;overflow:hidden;border-radius:10px">
+          <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=600&q=80&fit=crop" alt="Global Community" style="width:100%;height:160px;object-fit:cover;display:block"/>
+          <div style="padding:1.2rem 1.5rem"><div class="comm-card-icon">🌐</div><div class="comm-card-title">A Global Community</div><div class="comm-card-sub">Women from all backgrounds, industries, and geographies — united by a commitment to growth and leadership.</div></div>
+        </div>
+        <div class="comm-card" style="padding:0;overflow:hidden;border-radius:10px">
+          <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=600&q=80&fit=crop" alt="WILLNET Podcast" style="width:100%;height:160px;object-fit:cover;display:block"/>
+          <div style="padding:1.2rem 1.5rem"><div class="comm-card-icon">🎧</div><div class="comm-card-title">WILLNET Podcast</div><div class="comm-card-sub">Real conversations about leadership and life — wherever you are in your journey.</div></div>
+        </div>
+        <div class="comm-card" style="padding:0;overflow:hidden;border-radius:10px">
+          <img src="images/girls-group-forest.jpg" alt="Girls Corner: teenage girls sitting together outdoors" style="width:100%;height:160px;object-fit:cover;display:block"/>
+          <div style="padding:1.2rem 1.5rem"><div class="comm-card-icon">👩‍🎓</div><div class="comm-card-title">Girls Corner</div><div class="comm-card-sub">Investing in teenage girls so tomorrow's leaders start confident and prepared.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-strip">
+  <div class="cta-strip-inner">
+    <div class="cta-strip-text reveal">
+      <h2>Ready to be part of <em>something bigger?</em></h2>
+      <p>Join a growing community of women committed to learning, leading, and making a difference — in their careers, communities, and lives.</p>
+    </div>
+    <div class="cta-strip-actions reveal" style="transition-delay:.15s">
+      <a href="member.html" class="btn-dark">Join the Community</a>
+      <a href="program.html" class="btn-outline-dark">Explore Programs</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="logo"><img src="images/willnet-logo.svg" alt="WILLNET" width="1336" height="184"/></div>
+      <div class="tagline">Learn. Lead. Make Impact.</div>
+      <p>A leadership and learning community for women who want to grow with clarity, confidence, and purpose.</p>
+    </div>
+    <div class="footer-col"><h4>Navigate</h4><ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="program.html">Programs</a></li>
+      <li><a href="member.html">Membership</a></li>
+      <li><a href="podcast.html">Podcast</a></li>
+      <li><a href="founder.html">Founder</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Get Involved</h4><ul>
+      <li><a href="member.html">Become a Member</a></li>
+      <li><a href="program.html">Attend an Event</a></li>
+      <li><a href="founder.html">Meet the Founder</a></li>
+      <li><a href="mailto:partnerships@willnet.org">Partner With Us</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="podcast.html">Listen to Podcast</a></li>
+      <li><a href="mailto:partnerships@willnet.org">Sponsor Programs</a></li>
+      <li><a href="mailto:hello@willnet.org">hello@willnet.org</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 <span>WILLNET</span> — Women in Learning &amp; Leadership Network. All rights reserved.</p>
+    <p>Designed with <span>♥</span> for women who lead.</p>
+  </div>
+</footer>
+
+<script>
+(()=>{
+  const c=document.getElementById('particles');
+  const n=window.innerWidth<600?8:18;
+  for(let i=0;i<n;i++){
+    const p=document.createElement('div');p.className='particle';
+    const s=Math.random()*5+2;
+    p.style.cssText=`width:${s}px;height:${s}px;left:${Math.random()*100}%;animation-duration:${Math.random()*14+8}s;animation-delay:${Math.random()*12}s;`;
+    c.appendChild(p);
+  }
+})();
+const ham=document.getElementById('hamburger');
+const menu=document.getElementById('mobileMenu');
+const openM=()=>{ham.classList.add('active');ham.setAttribute('aria-expanded','true');menu.classList.add('open');document.body.classList.add('menu-open')};
+const closeM=()=>{ham.classList.remove('active');ham.setAttribute('aria-expanded','false');menu.classList.remove('open');document.body.classList.remove('menu-open')};
+ham.addEventListener('click',()=>menu.classList.contains('open')?closeM():openM());
+document.querySelectorAll('.mlink').forEach(a=>a.addEventListener('click',closeM));
+menu.addEventListener('click',e=>{if(e.target===menu)closeM()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeM()});
+window.addEventListener('scroll',()=>{document.getElementById('navbar').classList.toggle('scrolled',scrollY>60)},{passive:true});
+const ro=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');ro.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-up').forEach(el=>ro.observe(el));
+function countUp(el){
+  const t=+el.dataset.count,s=el.dataset.suffix||'';
+  if(!t)return;let st=null;const d=1600;
+  (function step(ts){if(!st)st=ts;const p=Math.min((ts-st)/d,1),e=1-Math.pow(1-p,4);el.textContent=Math.floor(e*t)+s;if(p<1)requestAnimationFrame(step)})(performance.now());
+}
+const co=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){countUp(e.target);co.unobserve(e.target)}})},{threshold:.6});
+document.querySelectorAll('[data-count]').forEach(el=>co.observe(el));
+</script>
+</body>
+</html>

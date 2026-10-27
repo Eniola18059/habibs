@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Programs — WILLNET | Women in Learning & Leadership Network</title>
+<meta name="description" content="Explore WILLNET programs: Leadership Learning Sessions, Mentorship Circles, community events and Girls Corner, practical leadership development for women and girls."/>
+<link rel="canonical" href="https://www.willnet.ca/program.html"/>
+<meta name="theme-color" content="#2B2B2B"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="WILLNET"/>
+<meta property="og:title" content="Programs — WILLNET | Women in Learning & Leadership Network"/>
+<meta property="og:description" content="Explore WILLNET programs: Leadership Learning Sessions, Mentorship Circles, community events and Girls Corner, practical leadership development for women and girls."/>
+<meta property="og:url" content="https://www.willnet.ca/program.html"/>
+<meta property="og:image" content="https://www.willnet.ca/images/og-image.jpg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="WILLNET — Women in Learning &amp; Leadership Network"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="icon" href="favicon.ico" sizes="any"/>
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml"/>
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root{
+      --mint:#A9D8C8;--mint-light:#c8ebe0;--mint-pale:#e8f6f1;--mint-deep:#7abfaa;--soft-sage:#8FFBB1;
+      --rose:#D889AA;--rose-light:#e8a8c2;--rose-pale:#f5dde8;--mauve:#B77C8E;--mauve-deep:#8a5568;
+      --cream:#F6F5F1;--cream-warm:#faf8f4;--white:#ffffff;
+      --text-dark:#2B2B2B;--text-mid:#4a4a4a;--text-muted:#7a7a7a;
+      --dark-bg:#1a2e2a;--dark-mid:#243b35;--dark-light:#2e4d44;
+      --border:rgba(169,216,200,.25);--nav-h:76px;--ease:cubic-bezier(.16,1,.3,1);
+    }
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-dark);overflow-x:hidden}
+
+    nav{position:fixed;top:0;left:0;right:0;z-index:500;height:var(--nav-h);padding:0 5%;display:flex;align-items:center;justify-content:space-between;background:rgba(26,46,42,.92);backdrop-filter:blur(20px);border-bottom:1px solid rgba(169,216,200,.15);transition:background .4s}
+    nav.scrolled{background:rgba(26,46,42,.98)}
+    .nav-logo{font-family:'Cormorant Garamond',serif;font-size:clamp(1.3rem,3vw,1.6rem);font-weight:600;color:var(--white);letter-spacing:.15em;text-decoration:none;z-index:601;position:relative}
+    .nav-logo img,.foot-logo img,footer .logo img{display:inline-block;vertical-align:-.02em;height:.7em;width:auto}
+    .nav-logo .ill{color:var(--rose)}
+    .nav-logo .net{color:var(--mint)}
+    .nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}
+    .nav-links a{color:rgba(255,255,255,.85);text-decoration:none;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;font-weight:500;transition:color .3s;position:relative}
+    .nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1px;background:var(--mint);transition:width .3s}
+    .nav-links a:hover{color:var(--mint-light)}.nav-links a:hover::after{width:100%}
+    .nav-links a.active{color:var(--mint-light)}.nav-links a.active::after{width:100%}
+    .nav-cta{background:transparent!important;border:1px solid var(--mint)!important;color:var(--mint)!important;padding:.5rem 1.3rem;border-radius:2px;transition:background .3s,color .3s!important}
+    .nav-cta::after{display:none!important}.nav-cta:hover{background:var(--mint)!important;color:var(--dark-bg)!important}
+    .hamburger{display:none;flex-direction:column;justify-content:space-between;width:28px;height:20px;cursor:pointer;z-index:601;background:none;border:none;padding:0}
+    .hamburger span{display:block;width:100%;height:1.5px;background:var(--white);border-radius:2px;transition:transform .4s var(--ease),opacity .3s,width .3s}
+    .hamburger.active span:nth-child(1){transform:translateY(9.25px) rotate(45deg)}
+    .hamburger.active span:nth-child(2){opacity:0;width:0}
+    .hamburger.active span:nth-child(3){transform:translateY(-9.25px) rotate(-45deg)}
+    .mobile-menu{position:fixed;inset:0;z-index:499;background:rgba(26,46,42,.97);display:flex;flex-direction:column;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:opacity .45s var(--ease),visibility .45s}
+    .mobile-menu.open{opacity:1;visibility:visible}
+    .mobile-menu ul{list-style:none;text-align:center}
+    .mobile-menu ul li{opacity:0;transform:translateY(24px);transition:opacity .4s,transform .4s}
+    .mobile-menu.open ul li:nth-child(1){opacity:1;transform:none;transition-delay:.08s}
+    .mobile-menu.open ul li:nth-child(2){opacity:1;transform:none;transition-delay:.14s}
+    .mobile-menu.open ul li:nth-child(3){opacity:1;transform:none;transition-delay:.20s}
+    .mobile-menu.open ul li:nth-child(4){opacity:1;transform:none;transition-delay:.26s}
+    .mobile-menu.open ul li:nth-child(5){opacity:1;transform:none;transition-delay:.32s}
+    .mobile-menu.open ul li:nth-child(6){opacity:1;transform:none;transition-delay:.38s}
+    .mobile-menu ul li a{display:block;padding:.75rem 2rem;font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,6vw,2.6rem);font-weight:300;color:rgba(255,255,255,.9);text-decoration:none;letter-spacing:.06em;transition:color .3s}
+    .mobile-menu ul li a:hover{color:var(--mint-light)}
+    .mobile-cta-wrap{margin-top:2rem;opacity:0;transform:translateY(20px);transition:opacity .4s .42s,transform .4s .42s}
+    .mobile-menu.open .mobile-cta-wrap{opacity:1;transform:none}
+    .mobile-socials{position:absolute;bottom:2.5rem;display:flex;gap:2rem;opacity:0;transition:opacity .4s .5s}
+    .mobile-menu.open .mobile-socials{opacity:1}
+    .mobile-socials span{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.4);cursor:pointer;transition:color .3s}
+    .mobile-socials span:hover{color:var(--mint)}
+    body.menu-open{overflow:hidden}
+
+    /* PAGE HERO — lightened tint */
+    .page-hero{background:var(--dark-bg);padding:calc(var(--nav-h) + clamp(4rem,8vw,6rem)) 5% clamp(4rem,8vw,6rem);position:relative;overflow:hidden}
+    .page-hero-bg{position:absolute;inset:0;background-image:url('images/colleagues-laughing-laptops.jpg');background-size:cover;background-position:center 40%}
+    /* Reduced opacity from .95/.8/.6 → .72/.5/.3 so the image shows through much more */
+    .page-hero-tint{position:absolute;inset:0;background:linear-gradient(to right,rgba(26,46,42,.72) 0%,rgba(26,46,42,.5) 55%,rgba(26,46,42,.3) 100%)}
+    .hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(169,216,200,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(169,216,200,.04) 1px,transparent 1px);background-size:60px 60px;animation:gridMove 20s linear infinite}
+    @keyframes gridMove{0%{background-position:0 0}100%{background-position:60px 60px}}
+    .particles{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+    .particle{position:absolute;border-radius:50%;animation:particleRise linear infinite}
+    .particle.mint{background:rgba(169,216,200,.15)}.particle.rose{background:rgba(216,137,170,.1)}
+    @keyframes particleRise{0%{transform:translateY(100%) scale(0);opacity:0}10%{opacity:1}90%{opacity:.3}100%{transform:translateY(-20%) scale(1.2);opacity:0}}
+    .page-hero-inner{position:relative;z-index:2;max-width:1200px;margin:0 auto}
+    .breadcrumb{display:flex;align-items:center;gap:.5rem;margin-bottom:2rem;opacity:0;animation:fadeUp .6s var(--ease) .2s forwards}
+    .breadcrumb a{font-size:.75rem;color:rgba(255,255,255,.6);text-decoration:none;letter-spacing:.1em;text-transform:uppercase;transition:color .3s}
+    .breadcrumb a:hover{color:var(--mint)}
+    .breadcrumb span{font-size:.75rem;color:rgba(255,255,255,.35)}
+    .breadcrumb .current{font-size:.75rem;color:var(--mint);letter-spacing:.1em;text-transform:uppercase}
+    .page-hero-tag{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--mint);font-weight:600;margin-bottom:1.2rem;display:flex;align-items:center;gap:.8rem;opacity:0;animation:fadeUp .6s var(--ease) .3s forwards}
+    .page-hero-tag::before{content:'';width:30px;height:1px;background:var(--mint)}
+    .page-hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,6vw,5.5rem);font-weight:300;color:var(--white);line-height:1.1;opacity:0;animation:fadeUp .8s var(--ease) .4s forwards}
+    .page-hero-title em{font-style:italic;color:var(--mint-light)}
+    /* Bumped subtitle opacity from .55 → .9 */
+    .page-hero-sub{max-width:640px;font-size:clamp(.95rem,1.5vw,1.1rem);line-height:1.85;color:rgba(255,255,255,.9);font-weight:300;margin-top:1.5rem;opacity:0;animation:fadeUp .7s var(--ease) .55s forwards}
+    .hero-pills{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:2.5rem;opacity:0;animation:fadeUp .6s var(--ease) .7s forwards}
+    .hero-pill{display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.1);border:1px solid rgba(169,216,200,.3);color:rgba(255,255,255,.85);font-size:.78rem;letter-spacing:.08em;padding:.45rem 1rem;border-radius:100px;text-decoration:none;transition:background .3s,border-color .3s,color .3s}
+    .hero-pill:hover{background:rgba(169,216,200,.15);border-color:rgba(169,216,200,.5);color:var(--mint-light)}
+    .hero-pill-dot{width:6px;height:6px;border-radius:50%;background:var(--mint)}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+
+    /* SHARED */
+    .section{max-width:1200px;margin:0 auto;padding:clamp(4rem,8vw,7rem) 5%}
+    .section-tag{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--mint);font-weight:600;margin-bottom:1rem;display:flex;align-items:center;gap:.8rem}
+    .section-tag::before{content:'';width:30px;height:1px;background:var(--mint)}
+    .section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:300;color:var(--text-dark);line-height:1.25;margin-bottom:1.5rem}
+    .section-title em{font-style:italic;color:var(--mauve)}
+    .section-title.light{color:var(--white)}.section-title.light em{color:var(--mint-light)}
+    .reveal{opacity:0;transform:translateY(32px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+    .reveal-left{opacity:0;transform:translateX(-32px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+    .reveal-left.visible{opacity:1;transform:translateX(0)}
+    .reveal-right{opacity:0;transform:translateX(32px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+    .reveal-right.visible{opacity:1;transform:translateX(0)}
+
+    .btn-primary{background:var(--mint);color:var(--dark-bg);border:none;padding:.9rem 2.2rem;font-family:'DM Sans',sans-serif;font-size:.85rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;text-decoration:none;display:inline-block;border-radius:2px;position:relative;overflow:hidden;transition:background .3s,transform .25s,box-shadow .3s}
+    .btn-primary::before{content:'';position:absolute;inset:0;background:rgba(255,255,255,.18);transform:translateX(-110%) skewX(-20deg);transition:transform .5s}
+    .btn-primary:hover::before{transform:translateX(110%) skewX(-20deg)}
+    .btn-primary:hover{background:var(--mint-light);transform:translateY(-2px);box-shadow:0 8px 30px rgba(169,216,200,.3)}
+    .btn-outline{background:transparent;border:1px solid var(--mint);color:var(--mint-deep);padding:.9rem 2.2rem;font-family:'DM Sans',sans-serif;font-size:.85rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;text-decoration:none;display:inline-block;border-radius:2px;transition:background .3s,color .3s,transform .25s}
+    .btn-outline:hover{background:var(--mint);color:var(--dark-bg);transform:translateY(-2px)}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,.3);color:rgba(255,255,255,.9);padding:.85rem 2rem;font-family:'DM Sans',sans-serif;font-size:.82rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;text-decoration:none;display:inline-block;border-radius:2px;transition:border-color .3s,color .3s,transform .25s}
+    .btn-ghost:hover{border-color:var(--mint);color:var(--mint-light);transform:translateY(-2px)}
+
+    /* OVERVIEW STRIP */
+    .overview-strip{background:var(--dark-mid);border-bottom:1px solid rgba(169,216,200,.12)}
+    .overview-inner{max-width:1200px;margin:0 auto;padding:0 5%;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(169,216,200,.08)}
+    .ov-item{background:var(--dark-mid);padding:1.8rem 2rem;text-align:center;transition:background .3s}
+    .ov-item:hover{background:rgba(169,216,200,.07)}
+    .ov-icon{font-size:1.8rem;margin-bottom:.7rem}
+    .ov-title{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:600;color:var(--white);margin-bottom:.3rem}
+    .ov-sub{font-size:.75rem;color:rgba(255,255,255,.55);line-height:1.5}
+
+    /* PROGRAM SECTIONS */
+    .prog-section{padding:clamp(5rem,9vw,8rem) 0;position:relative;overflow:hidden}
+    .prog-section.dark{background:var(--dark-bg)}.prog-section.light{background:var(--cream)}.prog-section.mid{background:var(--white)}
+    .prog-inner{max-width:1200px;margin:0 auto;padding:0 5%}
+    .prog-num-bg{position:absolute;font-family:'Cormorant Garamond',serif;font-size:clamp(12rem,22vw,20rem);font-weight:700;line-height:1;pointer-events:none;user-select:none;top:50%;transform:translateY(-50%)}
+    .prog-section.dark .prog-num-bg{right:-2%;color:rgba(255,255,255,.025)}
+    .prog-section.light .prog-num-bg{left:-2%;color:rgba(26,46,42,.04)}
+    .prog-section.mid .prog-num-bg{right:-2%;color:rgba(26,46,42,.03)}
+    .prog-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;position:relative;z-index:1}
+    .prog-grid.flip{direction:rtl}.prog-grid.flip > *{direction:ltr}
+
+    .prog-visual{position:relative}
+    .prog-card-main{border-radius:14px;overflow:hidden;position:relative;aspect-ratio:4/3}
+    .prog-card-main img{width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0}
+    .prog-card-main::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(26,46,42,.85) 0%,rgba(26,46,42,.2) 60%,transparent 100%)}
+    .prog-card-label{position:absolute;bottom:1.5rem;left:1.5rem;right:1.5rem;z-index:1}
+    .prog-card-label-tag{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mint);font-weight:600;margin-bottom:.3rem}
+    .prog-card-label-title{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:var(--white);line-height:1.3}
+    .prog-float-card{position:absolute;border-radius:10px;box-shadow:0 20px 60px rgba(26,46,42,.2);padding:1.2rem 1.5rem;animation:floatY 4s ease-in-out infinite}
+    @keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+    .prog-section.light .prog-float-card,.prog-section.mid .prog-float-card{background:var(--white);border:1px solid rgba(169,216,200,.2)}
+    .prog-section.dark .prog-float-card{background:rgba(36,59,53,.95);border:1px solid rgba(169,216,200,.2)}
+    .prog-float-card.fc1{bottom:-1.5rem;right:-1.5rem;min-width:160px;animation-delay:.5s}
+    .prog-float-card.fc2{top:-1.5rem;left:-1.5rem;min-width:140px;animation-delay:1.2s}
+    .fc-num{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--mint-deep);line-height:1}
+    .fc-label{font-size:.72rem;color:var(--text-muted);margin-top:.2rem;line-height:1.4}
+    .prog-section.dark .fc-label{color:rgba(255,255,255,.55)}.prog-section.dark .fc-num{color:var(--mint-light)}
+
+    .prog-index{font-family:'Cormorant Garamond',serif;font-size:.85rem;font-weight:600;color:var(--mint-deep);letter-spacing:.25em;text-transform:uppercase;margin-bottom:.8rem}
+    .prog-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,2.8rem);font-weight:300;line-height:1.2;margin-bottom:1.2rem}
+    .prog-section.dark .prog-title{color:var(--white)}
+    .prog-section.light .prog-title,.prog-section.mid .prog-title{color:var(--text-dark)}
+    .prog-title em{font-style:italic}
+    .prog-section.dark .prog-title em{color:var(--mint-light)}
+    .prog-section.light .prog-title em,.prog-section.mid .prog-title em{color:var(--mauve)}
+    .prog-desc{font-size:.97rem;line-height:1.9;font-weight:300;margin-bottom:2rem}
+    .prog-section.dark .prog-desc{color:rgba(255,255,255,.78)}
+    .prog-section.light .prog-desc,.prog-section.mid .prog-desc{color:var(--text-mid)}
+    .prog-features{display:flex;flex-direction:column;gap:.75rem;margin-bottom:2.5rem}
+    .prog-feat{display:flex;align-items:flex-start;gap:.9rem}
+    .prog-feat-check{width:20px;height:20px;border-radius:50%;background:rgba(169,216,200,.15);border:1px solid rgba(169,216,200,.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:.1rem;font-size:.65rem;color:var(--mint-deep);font-weight:700}
+    .prog-feat-check.rose{background:rgba(216,137,170,.08);border-color:rgba(216,137,170,.22);color:var(--mauve)}
+    .prog-feat-text{font-size:.88rem;line-height:1.6}
+    .prog-section.dark .prog-feat-text{color:rgba(255,255,255,.8)}
+    .prog-section.light .prog-feat-text,.prog-section.mid .prog-feat-text{color:var(--text-mid)}
+    .prog-topics{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:2.5rem}
+    .prog-topic{background:rgba(169,216,200,.1);border:1px solid rgba(169,216,200,.2);color:var(--mint-light);font-size:.72rem;padding:.3rem .85rem;border-radius:100px;letter-spacing:.05em}
+    .prog-section.light .prog-topic,.prog-section.mid .prog-topic{background:rgba(216,137,170,.07);border-color:rgba(216,137,170,.18);color:var(--mauve)}
+    .prog-actions{display:flex;gap:1rem;flex-wrap:wrap}
+
+    /* GIRLS CORNER */
+    .girls-section{position:relative;overflow:hidden;padding:clamp(5rem,9vw,8rem) 0}
+    .girls-section-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1400&q=60&fit=crop&crop=focalpoint&fp-y=0.3');background-size:cover;background-position:center 30%}
+    .girls-section-tint{position:absolute;inset:0;background:linear-gradient(135deg,rgba(26,46,42,.97) 0%,rgba(15,36,32,.94) 100%)}
+    .girls-section::before{content:'';position:absolute;top:-150px;right:-150px;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(216,137,170,.06),transparent 70%);pointer-events:none;z-index:1}
+    .girls-section::after{content:'';position:absolute;bottom:-100px;left:-100px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(169,216,200,.05),transparent 70%);pointer-events:none;z-index:1}
+    .girls-inner{max-width:1200px;margin:0 auto;padding:0 5%;position:relative;z-index:2}
+    .girls-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+    .girls-focus-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:2.5rem}
+    .girls-focus-item{background:rgba(255,255,255,.04);border:1px solid rgba(169,216,200,.1);border-radius:8px;padding:1.1rem 1.3rem;transition:border-color .3s,background .3s}
+    .girls-focus-item:hover{border-color:rgba(216,137,170,.3);background:rgba(216,137,170,.05)}
+    .gfi-icon{font-size:1.2rem;margin-bottom:.5rem}
+    .gfi-title{font-size:.85rem;font-weight:600;color:var(--white);margin-bottom:.2rem}
+    .gfi-sub{font-size:.75rem;color:rgba(255,255,255,.55);line-height:1.5}
+    .girls-visual-wrap{position:relative}
+    .girls-img-wrap{border-radius:14px;overflow:hidden;aspect-ratio:4/5;position:relative}
+    .girls-img-wrap img{width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0}
+    .girls-img-wrap::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(26,46,42,.9) 0%,rgba(26,46,42,.1) 55%,transparent 100%)}
+    .girls-img-overlay{position:absolute;bottom:2rem;left:2rem;right:2rem;z-index:1}
+    .girls-age-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(216,137,170,.15);border:1px solid rgba(216,137,170,.35);color:var(--rose-light);font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;padding:.5rem 1.2rem;border-radius:100px;margin-bottom:.8rem}
+    .girls-img-overlay h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;color:var(--white);margin-bottom:.3rem}
+    .girls-img-overlay p{font-size:.8rem;color:rgba(255,255,255,.65);line-height:1.5}
+    .girls-float{position:absolute;right:-1rem;top:2rem;background:var(--rose);color:var(--white);font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:.6rem 1.1rem;border-radius:100px;animation:floatY 3.5s ease-in-out infinite;z-index:2}
+
+    /* HOW IT WORKS */
+    .hiw-section{background:var(--cream)}
+    .hiw-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:4rem;position:relative}
+    .hiw-steps::before{content:'';position:absolute;top:2.2rem;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,var(--mint) 20%,var(--mint) 80%,transparent);z-index:0}
+    .hiw-step{text-align:center;position:relative;z-index:1}
+    .hiw-num{width:44px;height:44px;border-radius:50%;background:var(--white);border:1px solid var(--mint);display:flex;align-items:center;justify-content:center;margin:0 auto 1.2rem;font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--mint-deep);position:relative;z-index:1;transition:background .3s,color .3s}
+    .hiw-step:hover .hiw-num{background:var(--mint);color:var(--dark-bg)}
+    .hiw-icon{font-size:1.6rem;margin-bottom:.8rem}
+    .hiw-title{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--text-dark);margin-bottom:.5rem}
+    .hiw-desc{font-size:.84rem;color:#666;line-height:1.65}
+
+    /* TESTIMONIALS */
+    .testi{background:var(--cream);padding:var(--pad) var(--side)}
+    .testi-inner{max-width:1200px;margin:0 auto}
+    .testi-head{text-align:center;max-width:520px;margin:0 auto 3rem}
+    .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+    .tc{background:var(--white);border:1px solid rgba(43,43,43,.07);border-radius:12px;padding:2rem;transition:transform .35s,box-shadow .35s}
+    .tc:hover{transform:translateY(-5px);box-shadow:0 20px 55px rgba(169,216,200,.14)}
+    .tc-qm{font-family:'Cormorant Garamond',serif;font-size:3rem;color:var(--mint);line-height:.75;opacity:.45;margin-bottom:.6rem}
+    .tc-text{font-size:.92rem;line-height:1.85;color:var(--text-mid);font-style:italic;font-family:'Cormorant Garamond',serif;margin-bottom:1.4rem}
+    .tc-author{display:flex;align-items:center;gap:.8rem}
+    .tc-av{width:42px;height:42px;border-radius:50%;object-fit:cover;object-position:center top;border:2px solid rgba(169,216,200,.3);flex-shrink:0}
+    .tc-name{font-size:.85rem;font-weight:600;color:var(--text-dark)}
+    .tc-role{font-size:.72rem;color:var(--text-muted);margin-top:.1rem}
+
+    /* EVENTS */
+    .events-section{background:var(--white)}
+    .events-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+    .event-card{border:1px solid rgba(169,216,200,.18);border-radius:12px;overflow:hidden;transition:border-color .35s,transform .35s,box-shadow .35s}
+    .event-card:hover{border-color:var(--mint);transform:translateY(-5px);box-shadow:0 20px 60px rgba(26,46,42,.1)}
+    .event-img{width:100%;height:160px;object-fit:cover;display:block}
+    .event-header{background:var(--dark-bg);padding:1.5rem 1.8rem}
+    .event-header-top{display:flex;align-items:center;justify-content:space-between;gap:.75rem;margin-bottom:1rem}
+    .event-type-tag{background:rgba(169,216,200,.1);border:1px solid rgba(169,216,200,.2);color:var(--mint);font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;padding:.25rem .7rem;border-radius:100px;white-space:nowrap;flex-shrink:0}
+    .event-date-box{display:flex;align-items:center;gap:1.2rem}
+    .event-cal{background:rgba(169,216,200,.1);border:1px solid rgba(169,216,200,.2);border-radius:8px;padding:.6rem .8rem;text-align:center;min-width:52px;flex-shrink:0}
+    .event-cal .day{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:600;color:var(--mint-light);line-height:1}
+    .event-cal .month{font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-top:.1rem}
+    .event-header-info h4{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--white);margin-bottom:.2rem}
+    .event-header-info p{font-size:.75rem;color:rgba(255,255,255,.55);letter-spacing:.05em}
+    .event-body{padding:1.5rem 1.8rem}
+    .event-desc{font-size:.85rem;color:#666;line-height:1.7;margin-bottom:1.2rem}
+    .event-meta{display:flex;gap:1.2rem;margin-bottom:1.5rem;flex-wrap:wrap}
+    .event-meta-item{display:flex;align-items:center;gap:.4rem;font-size:.75rem;color:#777}
+    .event-meta-item span:first-child{font-size:.9rem}
+    .event-register{width:100%;padding:.7rem;font-family:'DM Sans',sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;border-radius:3px;cursor:pointer;border:1px solid rgba(169,216,200,.3);background:transparent;color:var(--mint-deep);transition:background .3s,color .3s,border-color .3s}
+    .event-register:hover{background:var(--mint);color:var(--dark-bg);border-color:var(--mint)}
+
+    /* FAQ */
+    .faq-mini-section{background:var(--cream);padding:clamp(4rem,8vw,7rem) 0}
+    .faq-mini-inner{max-width:800px;margin:0 auto;padding:0 5%}
+    .faq-item{background:var(--white);border:1px solid rgba(169,216,200,.18);border-radius:8px;overflow:hidden;margin-bottom:.75rem;transition:border-color .35s}
+    .faq-item.open{border-color:rgba(169,216,200,.45)}
+    .faq-q{width:100%;background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding:1.3rem 1.6rem;text-align:left}
+    .faq-q-text{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:600;color:var(--text-dark);line-height:1.4;transition:color .3s}
+    .faq-item.open .faq-q-text{color:var(--mauve)}
+    .faq-icon{width:26px;height:26px;flex-shrink:0;border-radius:50%;border:1px solid rgba(26,46,42,.15);display:flex;align-items:center;justify-content:center;transition:background .35s,border-color .35s}
+    .faq-icon svg{width:10px;height:10px;fill:none;stroke:var(--text-muted);stroke-width:2;stroke-linecap:round;transition:transform .4s var(--ease)}
+    .faq-item.open .faq-icon{background:var(--mint);border-color:var(--mint)}
+    .faq-item.open .faq-icon svg{stroke:var(--dark-bg);transform:rotate(180deg)}
+    .faq-a{max-height:0;overflow:hidden;transition:max-height .5s var(--ease)}
+    .faq-item.open .faq-a{max-height:300px}
+    .faq-a-inner{padding:.2rem 1.6rem 1.3rem;font-size:.88rem;color:#666;line-height:1.85;border-top:1px solid rgba(169,216,200,.12);padding-top:1rem}
+
+    /* CTA STRIP */
+    .cta-strip{background:var(--mint);padding:clamp(3rem,6vw,5rem) 5%;position:relative;overflow:hidden}
+    .cta-strip::before{content:'PROGRAMS';position:absolute;right:-1%;top:50%;transform:translateY(-50%);font-family:'Cormorant Garamond',serif;font-size:clamp(5rem,12vw,10rem);font-weight:700;color:rgba(26,46,42,.05);letter-spacing:-.02em;white-space:nowrap;pointer-events:none}
+    .cta-strip-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;position:relative;z-index:1}
+    .cta-strip-text h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:300;color:var(--dark-bg);line-height:1.25}
+    .cta-strip-text h2 em{font-style:italic}
+    .cta-strip-text p{font-size:.95rem;color:rgba(26,46,42,.7);line-height:1.65;margin-top:.5rem;max-width:500px}
+    .cta-strip-actions{display:flex;gap:1rem;flex-wrap:wrap}
+    .btn-dark{background:var(--dark-bg);color:var(--white);border:none;padding:.9rem 2.2rem;font-family:'DM Sans',sans-serif;font-size:.85rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;text-decoration:none;display:inline-block;border-radius:2px;transition:background .3s,transform .25s}
+    .btn-dark:hover{background:var(--dark-mid);transform:translateY(-2px)}
+    .btn-outline-dark{background:transparent;border:1px solid rgba(26,46,42,.3);color:var(--dark-bg);padding:.9rem 2.2rem;font-family:'DM Sans',sans-serif;font-size:.85rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;text-decoration:none;display:inline-block;border-radius:2px;transition:border-color .3s,background .3s,transform .25s}
+    .btn-outline-dark:hover{border-color:var(--dark-bg);background:rgba(26,46,42,.08);transform:translateY(-2px)}
+
+    /* FOOTER */
+    footer{background:#111e1b;padding:clamp(3rem,6vw,4rem) 5% 2rem}
+    .footer-top{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,.05)}
+    .footer-brand .logo{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:600;color:var(--white);letter-spacing:.15em;margin-bottom:.3rem}
+    .footer-brand .logo .ill{color:var(--rose)}
+    .footer-brand .logo .net{color:var(--mint)}
+    .footer-brand .tagline{font-size:.75rem;color:rgba(255,255,255,.4);letter-spacing:.2em;text-transform:uppercase;margin-bottom:1.2rem}
+    .footer-brand p{font-size:.85rem;color:rgba(255,255,255,.45);line-height:1.75;max-width:280px}
+    .footer-col h4{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mint);font-weight:600;margin-bottom:1.2rem}
+    .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:.7rem}
+    .footer-col ul li a{font-size:.85rem;color:rgba(255,255,255,.5);text-decoration:none;transition:color .3s}
+    .footer-col ul li a:hover{color:var(--mint-light)}
+    .footer-bottom{max-width:1200px;margin:0 auto;padding-top:1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+    .footer-bottom p{font-size:.78rem;color:rgba(255,255,255,.3)}
+    .footer-bottom p span{color:var(--rose)}
+
+    /* RESPONSIVE */
+    @media(max-width:900px){
+      .nav-links{display:none}.hamburger{display:flex}
+      .overview-inner{grid-template-columns:repeat(2,1fr)}
+      .prog-grid,.prog-grid.flip{grid-template-columns:1fr;direction:ltr}
+      .prog-grid.flip > *{direction:ltr}
+      .girls-grid{grid-template-columns:1fr;gap:3rem}
+      .girls-focus-grid{grid-template-columns:1fr 1fr}
+      .hiw-steps{grid-template-columns:1fr 1fr;gap:2rem}
+      .hiw-steps::before{display:none}
+      .testi-grid{grid-template-columns:1fr 1fr}
+      .events-grid{grid-template-columns:1fr}
+      .footer-top{grid-template-columns:1fr 1fr;gap:2rem}
+      .cta-strip-inner{flex-direction:column;align-items:flex-start}
+    }
+    @media(max-width:600px){
+      :root{--nav-h:64px}
+      .overview-inner{grid-template-columns:1fr 1fr}
+      .testi-grid{grid-template-columns:1fr}
+      .hiw-steps{grid-template-columns:1fr}
+      .girls-focus-grid{grid-template-columns:1fr}
+      .footer-top{grid-template-columns:1fr}
+      .footer-bottom{flex-direction:column;text-align:center}
+      .cta-strip-actions{flex-direction:column;align-items:stretch}
+      .btn-dark,.btn-outline-dark{text-align:center}
+      .prog-float-card{display:none}
+    }
+  </style>
+</head>
+<body>
+
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Site navigation">
+  <ul>
+    <li><a href="index.html" class="mlink">Home</a></li>
+    <li><a href="about.html" class="mlink">About</a></li>
+    <li><a href="program.html" class="mlink">Programs</a></li>
+    <li><a href="member.html" class="mlink">Membership</a></li>
+    <li><a href="podcast.html" class="mlink">Podcast</a></li>
+    
+     <li><a href="founder.html" class="mlink">Founder</a></li>
+    <li><a href="https://willnet.online" target="_blank" rel="noopener noreferrer" class="mlink">Learning</a></li>
+  </ul>
+  </ul>
+  <div class="mobile-cta-wrap">
+    <a href="member.html" class="mlink" style="background:var(--rose);color:var(--white);padding:1rem 2.5rem;font-family:'DM Sans',sans-serif;font-size:.85rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;display:inline-block;border-radius:2px;">Join the Community</a>
+  </div>
+  <div class="mobile-socials">
+    <span>Instagram</span><span>LinkedIn</span><span>Spotify</span>
+  </div>
+</div>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo"><img src="images/willnet-logo.svg" alt="WILLNET home" width="1336" height="184"/></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="program.html" class="active">Programs</a></li>
+    <li><a href="member.html">Membership</a></li>
+    <li><a href="podcast.html">Podcast</a></li>
+    
+    <li><a href="founder.html">Founder</a></li>
+     <li><a href="https://willnet.online" target="_blank" rel="noopener noreferrer">Learning</a></li>
+    <li><a href="contact.html" class="nav-cta">Join Now</a></li>
+  </ul>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileMenu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-tint"></div>
+  <div class="hero-grid"></div>
+  <div class="particles" id="particles"></div>
+  <div class="page-hero-inner">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a><span>/</span><span class="current">Programs</span>
+    </div>
+    <div class="page-hero-tag">What We Offer</div>
+    <h1 class="page-hero-title">Programs built for<br><em>real leadership growth</em></h1>
+    <p class="page-hero-sub">Every WILLNET program is designed around one belief: leadership is not innate — it is built. Through practical learning, mentorship, and intentional community, we give women the tools, space, and support to grow.</p>
+    <div class="hero-pills">
+      <a href="#learning-sessions" class="hero-pill"><div class="hero-pill-dot"></div>Learning Sessions</a>
+      <a href="#mentorship-circles" class="hero-pill"><div class="hero-pill-dot"></div>Mentorship Circles</a>
+      <a href="#community-events" class="hero-pill"><div class="hero-pill-dot"></div>Community Events</a>
+      <a href="#girls-corner" class="hero-pill"><div class="hero-pill-dot"></div>Girls Corner</a>
+    </div>
+  </div>
+</section>
+
+<div class="overview-strip">
+  <div class="overview-inner">
+    <div class="ov-item reveal"><div class="ov-icon">📚</div><div class="ov-title">Learning Sessions</div><div class="ov-sub">Monthly skill-building workshops</div></div>
+    <div class="ov-item reveal" style="transition-delay:.08s"><div class="ov-icon">🔵</div><div class="ov-title">Mentorship Circles</div><div class="ov-sub">Small group peer mentorship</div></div>
+    <div class="ov-item reveal" style="transition-delay:.16s"><div class="ov-icon">🌐</div><div class="ov-title">Community Events</div><div class="ov-sub">Curated networking gatherings</div></div>
+    <div class="ov-item reveal" style="transition-delay:.24s"><div class="ov-icon">👩‍🎓</div><div class="ov-title">Girls Corner</div><div class="ov-sub">Youth leadership for teens</div></div>
+  </div>
+</div>
+
+<section class="prog-section dark" id="learning-sessions">
+  <div class="prog-num-bg">01</div>
+  <div class="prog-inner">
+    <div class="prog-grid">
+      <div class="prog-text reveal-left">
+        <div class="prog-index">Program 01</div>
+        <h2 class="prog-title">Leadership <em>Learning Sessions</em></h2>
+        <p class="prog-desc">Our Leadership Learning Sessions provide practical, immediately applicable tools that women can use in their careers and lives. Each session is carefully facilitated to combine structured learning, honest conversation, and guided personal reflection.</p>
+        <div class="prog-features">
+          <div class="prog-feat"><div class="prog-feat-check">✓</div><div class="prog-feat-text">Monthly sessions on curated leadership topics</div></div>
+          <div class="prog-feat"><div class="prog-feat-check">✓</div><div class="prog-feat-text">Interactive workshops with real-world application exercises</div></div>
+          <div class="prog-feat"><div class="prog-feat-check">✓</div><div class="prog-feat-text">Facilitated group discussions and reflection prompts</div></div>
+          <div class="prog-feat"><div class="prog-feat-check">✓</div><div class="prog-feat-text">Access to session recordings and resource guides</div></div>
+          <div class="prog-feat"><div class="prog-feat-check">✓</div><div class="prog-feat-text">Available online — join from anywhere in the world</div></div>
+        </div>
+        <div class="prog-topics">
+          <span class="prog-topic">Leadership Confidence</span>
+          <span class="prog-topic">Communication & Influence</span>
+          <span class="prog-topic">Career Advancement</span>
+          <span class="prog-topic">Personal Branding</span>
+          <span class="prog-topic">Workplace Navigation</span>
+          <span class="prog-topic">Decision-Making</span>
+        </div>
+        <div class="prog-actions">
+          <a href="member.html" class="btn-primary">Join to Access Sessions</a>
+          <a href="#hiw" class="btn-ghost">How It Works</a>
+        </div>
+      </div>
+      <div class="prog-visual reveal-right">
+        <div class="prog-card-main">
+          <img src="https://images.unsplash.com/photo-1590650046871-92c887180603?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdvbWVuJTIwY29tbXVuaXR5fGVufDB8fDB8fHww" alt="Leadership Learning Sessions"/>
+          <div class="prog-card-label">
+            <div class="prog-card-label-tag">Program 01</div>
+            <div class="prog-card-label-title">Leadership Learning Sessions</div>
+          </div>
+        </div>
+        <div class="prog-float-card fc1">
+          <div class="fc-num">Monthly</div>
+          <div class="fc-label">Live sessions with recording access</div>
+        </div>
+        <div class="prog-float-card fc2">
+          <div class="fc-num">6+</div>
+          <div class="fc-label">Core topic areas covered</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="prog-section light" id="mentorship-circles">
+  <div class="prog-num-bg">02</div>
+  <div class="prog-inner">
+    <div class="prog-grid flip">
+      <div class="prog-text reveal-right">
+        <div class="prog-index">Program 02</div>
+        <h2 class="prog-title">Mentorship <em>Circles</em></h2>
+        <p class="prog-desc">Mentorship Circles are the heartbeat of WILLNET. These are small, carefully curated groups of women who meet regularly to discuss challenges, share experiences, celebrate wins, and support each other's leadership growth in a safe and structured environment.</p>
+        <div class="prog-features">
+          <div class="prog-feat"><div class="prog-feat-check rose">✓</div><div class="prog-feat-text">Groups of 6–10 women at similar career stages</div></div>
+          <div class="prog-feat"><div class="prog-feat-check rose">✓</div><div class="prog-feat-text">Bi-weekly or monthly meetings with a structured agenda</div></div>
+          <div class="prog-feat"><div class="prog-feat-check rose">✓</div><div class="prog-feat-text">Guided accountability and leadership reflection exercises</div></div>
+          <div class="prog-feat"><div class="prog-feat-check rose">✓</div><div class="prog-feat-text">Access to an experienced circle facilitator</div></div>
+          <div class="prog-feat"><div class="prog-feat-check rose">✓</div><div class="prog-feat-text">Opportunities to mentor younger women in the community</div></div>
+        </div>
+        <div class="prog-topics">
+          <span class="prog-topic">Peer Accountability</span>
+          <span class="prog-topic">Leadership Reflection</span>
+          <span class="prog-topic">Challenge Navigation</span>
+          <span class="prog-topic">Shared Growth</span>
+          <span class="prog-topic">Mentorship</span>
+        </div>
+        <div class="prog-actions">
+          <a href="member.html" class="btn-primary">Join a Circle</a>
+          <a href="#hiw" class="btn-outline">How It Works</a>
+        </div>
+      </div>
+      <div class="prog-visual reveal-left">
+        <div class="prog-card-main">
+          <img src="images/team-meeting-conference-room.jpg" alt="Mentorship Circles: women meeting around a conference table"/>
+          <div class="prog-card-label">
+            <div class="prog-card-label-tag">Program 02</div>
+            <div class="prog-card-label-title">Mentorship Circles</div>
+          </div>
+        </div>
+        <div class="prog-float-card fc1">
+          <div class="fc-num">6–10</div>
+          <div class="fc-label">Women per circle, curated carefully</div>
+        </div>
+        <div class="prog-float-card fc2">
+          <div class="fc-num">Bi-weekly</div>
+          <div class="fc-label">Regular meetings for consistent growth</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="prog-section mid" id="community-events">
+  <div class="prog-num-bg">03</div>
+  <div class="prog-inner">
+    <div class="prog-grid">
+      <div class="prog-text reveal-left">
+        <div class="prog-index">Program 03</div>
+        <h2 class="prog-title">Networking & <em>Community Events</em></h2>
+        <p class="prog-desc">WILLNET's Community Events are anything but ordinary networking. These curated gatherings are intentionally designed for authentic connection, genuine conversation, and relationships that extend far beyond a single evening. We create experiences that make women feel seen, celebrated, and connected.</p>
+        <div class="prog-features">
+          <div class="prog-feat"><div class="prog-feat-check rose">✓</div><div class="prog-feat-text">Curated gatherings with thoughtful formats — no awkward small talk</div></div>
+          <div class="prog-feat"><div class="prog-feat-check rose">✓</div><div class="prog-feat-text">Both in-person and virtual event options</div></div>
+          <div class="prog-feat"><div class="prog-feat-check rose">✓</div><div class="prog-feat-text">Themed conversations and collaborative activities</div></div>
+          <div class="prog-feat"><div class="prog-feat-check rose">✓</div><div class="prog-feat-text">Opportunities to connect with mentors, peers, and collaborators</div></div>
+          <div class="prog-feat"><div class="prog-feat-check rose">✓</div><div class="prog-feat-text">Priority invitations for Leadership Circle members</div></div>
+        </div>
+        <div class="prog-topics">
+          <span class="prog-topic">Authentic Connection</span>
+          <span class="prog-topic">Collaboration</span>
+          <span class="prog-topic">Community Building</span>
+          <span class="prog-topic">Shared Learning</span>
+        </div>
+        <div class="prog-actions">
+          <a href="member.html" class="btn-primary">Attend an Event</a>
+          <a href="#events" class="btn-outline">See Upcoming Events</a>
+        </div>
+      </div>
+      <div class="prog-visual reveal-right">
+        <div class="prog-card-main">
+          <img src="https://images.unsplash.com/photo-1590650046871-92c887180603?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdvbWVuJTIwY29tbXVuaXR5fGVufDB8fDB8fHww" alt="Community Events"/>
+          <div class="prog-card-label">
+            <div class="prog-card-label-tag">Program 03</div>
+            <div class="prog-card-label-title">Community Events</div>
+          </div>
+        </div>
+        <div class="prog-float-card fc1">
+          <div class="fc-num">Online &amp;</div>
+          <div class="fc-label">In-person events globally</div>
+        </div>
+        <div class="prog-float-card fc2">
+          <div class="fc-num">Regular</div>
+          <div class="fc-label">Events throughout the year</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="girls-section" id="girls-corner">
+  <div class="girls-section-bg"></div>
+  <div class="girls-section-tint"></div>
+  <div class="girls-inner">
+    <div class="girls-grid">
+      <div class="girls-left reveal-left">
+        <div class="prog-index" style="color:var(--mint)">Youth Initiative</div>
+        <h2 class="prog-title" style="color:var(--white)">Girls Corner — <em>building tomorrow's leaders <span style="color:var(--mint-light)">today</span></em></h2>
+        <p class="prog-desc" style="color:rgba(255,255,255,.78)">Girls Corner is WILLNET's dedicated initiative for teenage girls. Young women often start doubting their abilities during their teenage years — Girls Corner exists to reverse that. We create a safe, empowering environment where girls develop the confidence, skills, and mindset to lead.</p>
+        <div class="girls-focus-grid">
+          <div class="girls-focus-item"><div class="gfi-icon">💪</div><div class="gfi-title">Confidence Building</div><div class="gfi-sub">Building unshakeable self-belief from the inside out</div></div>
+          <div class="girls-focus-item"><div class="gfi-icon">🎤</div><div class="gfi-title">Public Speaking</div><div class="gfi-sub">Finding your voice and using it with power</div></div>
+          <div class="girls-focus-item"><div class="gfi-icon">🧭</div><div class="gfi-title">Identity & Purpose</div><div class="gfi-sub">Knowing who you are and why it matters</div></div>
+          <div class="girls-focus-item"><div class="gfi-icon">🌟</div><div class="gfi-title">Leadership Skills</div><div class="gfi-sub">Practical leadership tools built for real life</div></div>
+          <div class="girls-focus-item"><div class="gfi-icon">🤝</div><div class="gfi-title">Mentorship</div><div class="gfi-sub">Guided by experienced women who've walked the path</div></div>
+          <div class="girls-focus-item"><div class="gfi-icon">🚀</div><div class="gfi-title">Career Exploration</div><div class="gfi-sub">Discovering possibilities and mapping a future</div></div>
+        </div>
+        <a href="member.html" class="btn-primary">Join Girls Corner</a>
+      </div>
+      <div class="girls-visual-wrap reveal-right">
+        <div class="girls-img-wrap">
+          <img src="images/girls-group-forest.jpg" alt="Girls Corner youth leadership: teenage girls sitting together outdoors"/>
+          <div class="girls-img-overlay">
+            <div class="girls-age-badge"><span>🎯</span><span>Designed for girls ages 13–19</span></div>
+            <h3>Girls Corner</h3>
+            <p>Where the next generation of women leaders find their voice</p>
+          </div>
+        </div>
+        <div class="girls-float">Now Enrolling</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hiw-section" id="hiw">
+  <div class="section">
+    <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto 1rem">
+      <div class="section-tag" style="justify-content:center">Simple to Start</div>
+      <h2 class="section-title">How to get <em>involved</em></h2>
+    </div>
+    <div class="hiw-steps">
+      <div class="hiw-step reveal" style="transition-delay:.05s">
+        <div class="hiw-num">1</div><div class="hiw-icon">📋</div>
+        <div class="hiw-title">Choose Your Tier</div>
+        <div class="hiw-desc">Pick the membership level that fits where you are — Free Community, Leadership Circle (Premium), or Girls Corner.</div>
+      </div>
+      <div class="hiw-step reveal" style="transition-delay:.15s">
+        <div class="hiw-num">2</div><div class="hiw-icon">✅</div>
+        <div class="hiw-title">Join the Community</div>
+        <div class="hiw-desc">Complete your simple registration. No long forms or waiting lists — you're in immediately.</div>
+      </div>
+      <div class="hiw-step reveal" style="transition-delay:.25s">
+        <div class="hiw-num">3</div><div class="hiw-icon">🔗</div>
+        <div class="hiw-title">Get Connected</div>
+        <div class="hiw-desc">Receive your welcome, access your member dashboard, and get matched to a Mentorship Circle if applicable.</div>
+      </div>
+      <div class="hiw-step reveal" style="transition-delay:.35s">
+        <div class="hiw-num">4</div><div class="hiw-icon">🚀</div>
+        <div class="hiw-title">Start Growing</div>
+        <div class="hiw-desc">Show up to sessions, connect at events, and engage with a community of women who are all committed to the same journey.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testi">
+  <div class="testi-inner">
+    <div class="testi-head reveal">
+      <div class="section-tag center">What Members Say</div>
+      <h2 class="h2 center">Stories of <em>growth</em> and impact</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="tc reveal" style="transition-delay:.05s">
+        <div class="tc-qm">"</div>
+        <p class="tc-text">WILLNET gave me a community of women who truly understood my journey. The mentorship circles changed how I see myself as a leader.</p>
+        <div class="tc-author">
+          <img class="tc-av" src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=100&q=80&fit=crop&crop=face" alt="Amelia C., Leadership Circle Member"/>
+          <div><div class="tc-name">Amelia C.</div><div class="tc-role">Leadership Circle Member</div></div>
+        </div>
+      </div>
+      <div class="tc reveal" style="transition-delay:.12s">
+        <div class="tc-qm">"</div>
+        <p class="tc-text">Three months in, I had negotiated a promotion and found my voice in board-level conversations. The tools here are real, practical, and transformative.</p>
+        <div class="tc-author">
+          <img class="tc-av" src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=100&q=80&fit=crop&crop=face" alt="Charlotte N., Community Member"/>
+          <div><div class="tc-name">Charlotte N.</div><div class="tc-role">Community Member</div></div>
+        </div>
+      </div>
+      <div class="tc reveal" style="transition-delay:.19s">
+        <div class="tc-qm">"</div>
+        <p class="tc-text">My daughter attended Girls Corner at 16. Watching her confidence transform was one of the proudest moments of my life. WILLNET changes generations.</p>
+        <div class="tc-author">
+          <img class="tc-av" src="https://images.unsplash.com/photo-1589156229687-496a31ad1d1f?w=100&q=80&fit=crop&crop=face" alt="Harper A., Girls Corner Parent"/>
+          <div><div class="tc-name">Harper A.</div><div class="tc-role">Girls Corner Parent</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="events-section" id="events">
+  <div class="section">
+    <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto 1rem">
+      <div class="section-tag" style="justify-content:center">What's Coming Up</div>
+      <h2 class="section-title">Upcoming <em>events &amp; sessions</em></h2>
+    </div>
+    <div class="events-grid">
+      <div class="event-card reveal" style="transition-delay:.05s">
+        <img class="event-img" src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=700&q=75&fit=crop&crop=focalpoint&fp-y=0.3" alt="Finding Your Leadership Voice"/>
+        <div class="event-header">
+          <div class="event-header-top">
+            <div class="event-date-box">
+              <div class="event-cal"><div class="day">14</div><div class="month">Apr</div></div>
+              <div class="event-header-info"><h4>Finding Your Leadership Voice</h4><p>Monthly Learning Session</p></div>
+            </div>
+            <div class="event-type-tag">Virtual</div>
+          </div>
+        </div>
+        <div class="event-body">
+          <div class="event-desc">A deep dive into communication, presence, and how to speak with confidence in high-stakes environments. Practical exercises included.</div>
+          <div class="event-meta">
+            <div class="event-meta-item"><span>🕐</span><span>6:00 PM – 8:00 PM EST<span></div>
+         
+          </div>
+          <button class="event-register">Register Now →</button>
+        </div>
+      </div>
+      <div class="event-card reveal" style="transition-delay:.15s">
+        <img class="event-img" src="https://plus.unsplash.com/premium_photo-1722859315866-d1a8ae22bfc4?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Spring Community Gathering"/>
+        <div class="event-header">
+          <div class="event-header-top">
+            <div class="event-date-box">
+              <div class="event-cal"><div class="day">26</div><div class="month">Apr</div></div>
+              <div class="event-header-info"><h4>Spring Community Gathering</h4><p>Networking & Community Event</p></div>
+            </div>
+            <div class="event-type-tag">In-Person</div>
+          </div>
+        </div>
+        <div class="event-body">
+          <div class="event-desc">A curated evening of authentic connection, shared stories, and the kind of conversations that create lasting relationships.</div>
+          <div class="event-meta">
+            <div class="event-meta-item"><span>🕑</span><span>5:00 PM – 9:00 PM EST</span></div>
+            <div class="event-meta-item"><span>📍</span><span></span></div>
+          </div>
+          <button class="event-register">Register Now →</button>
+        </div>
+      </div>
+      <div class="event-card reveal" style="transition-delay:.25s">
+        <img class="event-img" src="images/study-session-laptops.jpg" alt="Girls Corner Public Speaking Bootcamp: two young women studying together"/>
+        <div class="event-header">
+          <div class="event-header-top">
+            <div class="event-date-box">
+              <div class="event-cal"><div class="day">10</div><div class="month">May</div></div>
+              <div class="event-header-info"><h4>Girls Corner: Public Speaking Bootcamp</h4><p>Girls Corner Workshop</p></div>
+            </div>
+            <div class="event-type-tag">Virtual</div>
+          </div>
+        </div>
+        <div class="event-body">
+          <div class="event-desc">A full-day bootcamp for Girls Corner members focused on public speaking, body language, and owning the room with confidence.</div>
+          <div class="event-meta">
+            <div class="event-meta-item"><span>🕙</span><span>10:00 AM – 4:00 PM EST</span></div>
+        
+          </div>
+          <button class="event-register">Register Now →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq-mini-section">
+  <div class="faq-mini-inner">
+    <div class="reveal" style="text-align:center;margin-bottom:3rem">
+      <div class="section-tag" style="justify-content:center">Got Questions?</div>
+      <h2 class="section-title">Programs — <em>common questions</em></h2>
+    </div>
+    <div class="faq-item open reveal">
+      <button class="faq-q" aria-expanded="true">
+        <span class="faq-q-text">Do I need to be a member to attend events or sessions?</span>
+        <span class="faq-icon"><svg viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">Free members can attend selected open events and community gatherings. Leadership Circle (Premium) members get priority access and invitations to all programs, including monthly Learning Sessions and Mentorship Circles. Some events may be open to non-members as a taster.</div></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" aria-expanded="false">
+        <span class="faq-q-text">How are Mentorship Circles formed and matched?</span>
+        <span class="faq-icon"><svg viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">Circles are curated by the WILLNET team based on your career stage, industry, goals, and availability. We take great care to ensure each circle is well-matched so the conversations feel relevant and the support feels genuine. Once matched, you'll meet your circle and begin your regular sessions.</div></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" aria-expanded="false">
+        <span class="faq-q-text">Are all programs available online or only in person?</span>
+        <span class="faq-icon"><svg viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">All Learning Sessions and Mentorship Circles are available online, making them accessible to women globally. Community Events are a mix — some are virtual and some are in-person in select locations. Girls Corner runs both virtual workshops and in-person bootcamps.</div></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" aria-expanded="false">
+        <span class="faq-q-text">What age is Girls Corner for, and how do I enrol my daughter?</span>
+        <span class="faq-icon"><svg viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">Girls Corner is designed for teenage girls between the ages of 13 and 19. Parents or guardians can enrol their daughters through the Membership page. Girls can also express interest directly if they're 16 or older. We welcome reach-outs to discuss specific situations.</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-strip">
+  <div class="cta-strip-inner">
+    <div class="cta-strip-text reveal">
+      <h2>Ready to join a program <em>built for you?</em></h2>
+      <p>Become a WILLNET member and get access to the programs, community, and support you need to grow as a leader.</p>
+    </div>
+    <div class="cta-strip-actions reveal" style="transition-delay:.15s">
+      <a href="member.html" class="btn-dark">View Membership Options</a>
+      <a href="about.html" class="btn-outline-dark">Learn About WILLNET</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="logo"><img src="images/willnet-logo.svg" alt="WILLNET" width="1336" height="184"/></div>
+      <div class="tagline">Learn. Lead. Make Impact.</div>
+      <p>A leadership and learning community for women who want to grow with clarity, confidence, and purpose.</p>
+    </div>
+    <div class="footer-col"><h4>Navigate</h4><ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="program.html">Programs</a></li>
+      <li><a href="member.html">Membership</a></li>
+      <li><a href="podcast.html">Podcast</a></li>
+      <li><a href="founder.html">Founder</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Programs</h4><ul>
+      <li><a href="#learning-sessions">Learning Sessions</a></li>
+      <li><a href="#mentorship-circles">Mentorship Circles</a></li>
+      <li><a href="#community-events">Community Events</a></li>
+      <li><a href="#girls-corner">Girls Corner</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Get Involved</h4><ul>
+      <li><a href="member.html">Become a Member</a></li>
+      <li><a href="#events">Attend an Event</a></li>
+      <li><a href="mailto:partnerships@willnet.org">Partner With Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 <span>WILLNET</span> — Women in Learning &amp; Leadership Network. All rights reserved.</p>
+    <p>Designed with <span>♥</span> for women who lead.</p>
+  </div>
+</footer>
+
+<script>
+(()=>{
+  const c=document.getElementById('particles');
+  const n=window.innerWidth<600?8:18;
+  for(let i=0;i<n;i++){
+    const p=document.createElement('div');
+    p.className='particle '+(i%2===0?'mint':'rose');
+    const s=Math.random()*5+2;
+    p.style.cssText=`width:${s}px;height:${s}px;left:${Math.random()*100}%;animation-duration:${Math.random()*14+8}s;animation-delay:${Math.random()*12}s;`;
+    c.appendChild(p);
+  }
+})();
+const ham=document.getElementById('hamburger');
+const menu=document.getElementById('mobileMenu');
+const openM=()=>{ham.classList.add('active');ham.setAttribute('aria-expanded','true');menu.classList.add('open');document.body.classList.add('menu-open')};
+const closeM=()=>{ham.classList.remove('active');ham.setAttribute('aria-expanded','false');menu.classList.remove('open');document.body.classList.remove('menu-open')};
+ham.addEventListener('click',()=>menu.classList.contains('open')?closeM():openM());
+document.querySelectorAll('.mlink').forEach(a=>a.addEventListener('click',closeM));
+menu.addEventListener('click',e=>{if(e.target===menu)closeM()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeM()});
+window.addEventListener('scroll',()=>{document.getElementById('navbar').classList.toggle('scrolled',scrollY>60)},{passive:true});
+const ro=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');ro.unobserve(e.target)}});
+},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el=>ro.observe(el));
+document.querySelectorAll('.faq-q').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const item=btn.closest('.faq-item');
+    const isOpen=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i=>{i.classList.remove('open');i.querySelector('.faq-q').setAttribute('aria-expanded','false')});
+    if(!isOpen){item.classList.add('open');btn.setAttribute('aria-expanded','true')}
+  });
+});
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const target=document.querySelector(a.getAttribute('href'));
+    if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth',block:'start'})}
+  });
+});
+</script>
+</body>
+</html>
